@@ -80,7 +80,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 
-html_title = "Bare Metal Server - User Guide"
+html_title = "Bare Metal Server - Developer Guide"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -91,7 +91,7 @@ html_static_path = ['_static']
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
 ('index',
-     'bms-umn.tex',
-     u'Bare Metal Server - User Guide',
+     'bms-dev-guide.tex',
+     u'Bare Metal Server - Developer Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
