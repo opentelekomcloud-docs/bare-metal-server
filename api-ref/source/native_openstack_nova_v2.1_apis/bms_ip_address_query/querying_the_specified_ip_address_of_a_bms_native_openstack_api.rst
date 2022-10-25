@@ -1,0 +1,106 @@
+:original_name: en-us_topic_0053158662.html
+
+.. _en-us_topic_0053158662:
+
+Querying the Specified IP Address of a BMS (Native OpenStack API)
+=================================================================
+
+Function
+--------
+
+This API is used to query the specified IP address of a BMS based on the network name.
+
+URI
+---
+
+GET /v2.1/{project_id}/servers/{server_id}/ips/{vpc_id}
+
+:ref:`Table 1 <en-us_topic_0053158662__table6532183934016>` lists the parameters.
+
+.. _en-us_topic_0053158662__table6532183934016:
+
+.. table:: **Table 1** Parameter description
+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                           |
+   +=======================+=======================+=======================================================================================================================================================+
+   | project_id            | Yes                   | Specifies the project ID.                                                                                                                             |
+   |                       |                       |                                                                                                                                                       |
+   |                       |                       | For how to obtain the project ID, see `Obtaining Required Information <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328009.html>`__. |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | server_id             | Yes                   | Specifies the BMS ID.                                                                                                                                 |
+   |                       |                       |                                                                                                                                                       |
+   |                       |                       | You can obtain the BMS ID from the BMS console or using the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>` API.                 |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | vpc_id                | Yes                   | Specifies the ID of the VPC where the BMS is located.                                                                                                 |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Request
+-------
+
+-  Request parameters
+
+   None
+
+-  Example request
+
+   .. code-block:: text
+
+      GET https://{ECS Endpoint}/v2.1/c685484a8cc2416b97260938705deb65/servers/95bf2490-5428-432c-ad9b-5e3406f869dd/ips/{vpc_id}
+
+Response
+--------
+
+-  Response parameters
+
+   +------------------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                    | Type             | Description                                                                                                                                           |
+   +==============================+==================+=======================================================================================================================================================+
+   | VPC where the BMS is located | Array of objects | Specifies the ID of the VPC where the BMS is located. For details about the format, see :ref:`Table 2 <en-us_topic_0053158662__table22651992144025>`. |
+   +------------------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+   .. _en-us_topic_0053158662__table22651992144025:
+
+   .. table:: **Table 2** Network parameter structure description
+
+      +-----------------------+-----------------------+-----------------------------------------------------+
+      | Parameter             | Type                  | Description                                         |
+      +=======================+=======================+=====================================================+
+      | version               | Integer               | Specifies the IP address version. The value can be: |
+      |                       |                       |                                                     |
+      |                       |                       | -  **4**: IPv4 address                              |
+      |                       |                       | -  **6**: IPv6 address                              |
+      +-----------------------+-----------------------+-----------------------------------------------------+
+      | addr                  | String                | Specifies the IP address.                           |
+      +-----------------------+-----------------------+-----------------------------------------------------+
+
+-  Example response
+
+   ::
+
+      {
+          "5849fdf1-9d79-4589-80c2-fe557990c417": [
+              {
+                  "version": 4,
+                  "addr": "192.168.1.159"
+              }
+          ]
+      }
+
+Returned Values
+---------------
+
+Normal values
+
+=============== ============================================
+Returned Values Description
+=============== ============================================
+200             The request has been successfully processed.
+=============== ============================================
+
+For details about other returned values, see :ref:`Status Codes <en-us_topic_0053158690>`.
+
+Error Codes
+-----------
+
+See :ref:`Error Codes <en-us_topic_0107541808>`.
