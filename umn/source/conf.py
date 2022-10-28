@@ -93,7 +93,7 @@ html_static_path = ['_static']
 
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
-('index',
+    ('index',
      'bms-umn.tex',
      u'Bare Metal Server - User Guide',
      u'OpenTelekomCloud', 'manual'),
