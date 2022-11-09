@@ -8,6 +8,10 @@ Change History
 +-----------------------------------+--------------------------------------------+
 | Released On                       | Description                                |
 +===================================+============================================+
+| 2022-10-30                        | Modified the following content:            |
+|                                   |                                            |
+|                                   | Optimized the descriptions of error codes. |
++-----------------------------------+--------------------------------------------+
 | 2021-10-30                        | Modified the following content:            |
 |                                   |                                            |
 |                                   | Optimized the descriptions of error codes. |
