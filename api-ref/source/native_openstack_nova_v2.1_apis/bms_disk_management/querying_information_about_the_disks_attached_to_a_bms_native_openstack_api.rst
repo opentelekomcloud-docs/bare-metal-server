@@ -78,7 +78,7 @@ Response
    ::
 
       {
-          "volumeAttachment": {
+          "volumeAttachments": {
               "device": "/dev/vdb",
               "serverId": "820abbd0-2d8e-4bc5-ae46-69cacfd4fbaa",
               "id": "b53f23bd-ee8f-49ec-9420-d1acfeaf91d6",
