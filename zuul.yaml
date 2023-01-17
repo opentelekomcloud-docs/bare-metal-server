@@ -1,12 +1,21 @@
----
+- job:
+    name: build-otc-bms-image-creation-guide
+    parent: otc-tox-docs
+    description: Build image-creation-guide document using tox
+    files:
+    - ^doc/image-creation-guide/source/.*
+    vars:
+      tox_envlist: image-creation-guide
 - project:
     merge-mode: squash-merge
     default-branch: main
     templates:
-      - helpcenter-base-jobs
-      - api-ref-hc-jobs
-      - umn-hc-jobs
-      - dev-guide-hc-jobs
+    - helpcenter-base-jobs
+    - api-ref-hc-jobs
+    - umn-hc-jobs
+    - dev-guide-hc-jobs
     check:
+      # Separate documents are rendered in check, while published through regular otc-tox-docs job part of the basic template
       jobs:
-        - noop
+      - noop
+      - build-otc-bms-image-creation-guide
