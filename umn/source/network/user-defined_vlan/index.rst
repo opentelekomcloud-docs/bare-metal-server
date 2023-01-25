@@ -19,6 +19,6 @@ User-defined VLAN
    overview
    configuring_a_user-defined_vlan_suse_linux_enterprise_server_12
    configuring_a_user-defined_vlan_suse_linux_enterprise_server_11
-   configuring_a_user-defined_vlan_red_hat,_centos,_oracle_linux,_and_euleros
+   configuring_a_user-defined_vlan_red_hat_centos_oracle_linux_and_euleros
    configuring_a_user-defined_vlan_ubuntu
    configuring_a_user-defined_vlan_windows_server
