@@ -20,7 +20,7 @@ Installing a Linux OS on the VM
    overview
    os_partitioning_recommendations
    suse_11_sp4
-   ubuntu_18.04,_ubuntu_16.04,_ubuntu_14.04,_and_debian_8.6
+   ubuntu_18.04_ubuntu_16.04_ubuntu_14.04_and_debian_8.6
    suse_12
    centos_7.4_arm
    xenserver_7.1
