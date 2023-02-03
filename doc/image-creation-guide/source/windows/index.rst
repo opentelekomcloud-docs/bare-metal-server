@@ -25,7 +25,7 @@ Windows
 
    preparing_hardware_and_software
    optional_installing_x86_v5_server_drivers/index
-   using_dism++_to_install_the_vmtools_driver_for_an_iso_file
+   using_dism_to_install_the_vmtools_driver_for_an_iso_file
    generating_a_new_iso_file
    creating_a_windows_vm/index
    configuring_the_vm_environment
