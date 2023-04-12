@@ -9,7 +9,7 @@ BMS provides four types of networks: VPC, high-speed network, user-defined VLAN,
 
 VPC and high-speed network interfaces are VLAN sub-interfaces created after system maintenance VLAN NICs are bonded. You can manage and configure NICs of user-defined VLANs and IB networks.
 
-The QingtTian architecture improves the network performance and VPC NIC bonding provides high reliability.
+The QingTian architecture improves the network performance and VPC NIC bonding provides high reliability.
 
 
 .. figure:: /_static/images/en-us_image_0160824210.png

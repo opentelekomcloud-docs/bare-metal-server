@@ -10,7 +10,7 @@ BMSs that use EVS disks as their system disks can be provisioned within a shorte
 Such BMSs have the following advanced features:
 
 -  BMSs booted from EVS disks can be provisioned within about 5 minutes.
--  BMSs support CSBS backups, ensuring data security.
+-  CSBS backups ensure data security.
 -  BMS rebuilding upon faults is supported, enabling quick service recovery.
 -  An image of a BMS can be exported to apply configurations of the BMS to other BMSs, eliminating the need to repeatedly configure BMSs.
 

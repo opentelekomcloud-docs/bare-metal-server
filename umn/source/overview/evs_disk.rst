@@ -18,7 +18,7 @@ EVS Disk Types
 BMSs support the following types of EVS disks:
 
 -  Common I/O: This EVS disk type delivers a maximum of 1000 IOPS. It is ideal for application scenarios that require large capacity, medium read/write speed, and fewer transactions, such as enterprise applications and small-scale testing.
--  High I/O: This EVS disk type delivers a maximum of 3000 IOPS and a minimum of 6 ms read/write latency. It is designed to meet the needs of mainstream high-performance, high-reliability application scenarios, such as enterprise applications, large-scale development and testing, and web server logs.
+-  High I/O: This EVS disk type delivers a maximum of 3,000 IOPS and a minimum of 6 ms read/write latency. It is designed to meet the needs of mainstream high-performance, high-reliability application scenarios, such as enterprise applications, large-scale development and testing, and web server logs.
 -  Ultra-high I/O: This EVS disk type delivers a maximum of 20,000 IOPS and a minimum of 1 ms read/write latency. It is excellent for ultra-high I/O, ultra-high bandwidth, and read/write-intensive application scenarios, such as distributed file systems in HPC or NoSQL/RDS in I/O-intensive scenarios.
 -  Extreme SSD: This EVS disk type delivers up to 128,000 IOPS and sub-millisecond read latencies. With RDMA integrated with low-latency congestion control algorithms, this disk type is suitable for application scenarios that require ultra-high bandwidth and ultra-low latency.
 

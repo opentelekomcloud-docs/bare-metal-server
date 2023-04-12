@@ -11,6 +11,7 @@ The following tables list the 64-bit OSs supported by different BMS types.
 -  :ref:`Table 2 <en-us_topic_0263802108__table221119842419>` lists the OSs supported by GPU-accelerated P1 and P2 BMSs.
 -  :ref:`Table 3 <en-us_topic_0263802108__table1261773364111>` lists the OSs supported by high-performance computing physical.h2.large BMSs.
 -  :ref:`Table 4 <en-us_topic_0263802108__table16114231102412>` lists the OSs supported by memory-optimized M2 BMSs.
+-  :ref:`Table 5 <en-us_topic_0263802108__table188617221012>` lists the OSs supported by I/O optimized physical.i7n.28xlarge.4 BMSs.
 
 .. note::
 
@@ -80,3 +81,13 @@ The following tables list the 64-bit OSs supported by different BMS types.
    ====== ==========================
    CentOS CentOS 7.2/7.3/7.4/7.5/7.6
    ====== ==========================
+
+.. _en-us_topic_0263802108__table188617221012:
+
+.. table:: **Table 5** I/O-optimized physical.i7n.28xlarge.4
+
+   ====== ================
+   OS     Version
+   ====== ================
+   Ubuntu Ubuntu 22.04 LTS
+   ====== ================
