@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0084461768:
 
-Supported Monitoring Metrics (with Agent Installed)
-===================================================
+Monitored Metrics (with Agent Installed)
+========================================
 
 Description
 -----------

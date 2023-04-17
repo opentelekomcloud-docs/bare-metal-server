@@ -13,7 +13,7 @@ When you create a common BMS (that is, a BMS booted from a local disk), its OS n
 BMSs supporting quick provisioning have the following advantages over other BMSs:
 
 -  BMSs booted from EVS disks can be provisioned within about 5 minutes.
--  BMSs support CSBS backups, ensuring data security.
+-  CSBS backups ensure data security.
 -  BMS rebuilding upon faults is supported, enabling quick service recovery.
 -  An image of a BMS can be exported to apply configurations of the BMS to other BMSs, eliminating the need to repeatedly configure BMSs.
 

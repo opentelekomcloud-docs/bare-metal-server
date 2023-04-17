@@ -31,6 +31,6 @@ Troubleshooting
 
 This is a normal phenomenon. You can ignore it.
 
-The static host name of a Linux BMS is user-defined and injected using Cloud-Init during the BMS creation. According to the test results, Cloud-Init adapts to OSs differently. As a result, hostnames of some ECSs have suffix **.novalocal**, whereas others do not.
+The static host name of a Linux BMS is user-defined and injected using Cloud-Init during the BMS creation. According to the test results, Cloud-Init adapts to OSs differently. As a result, hostnames of some BMSs have suffix **.novalocal**, whereas others do not.
 
 If you really do not want any host names with the suffix **.novalocal**, you can change the hostname. For details, see :ref:`Changing the Name of a BMS <en-us_topic_0083737000>`

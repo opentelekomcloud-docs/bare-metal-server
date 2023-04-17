@@ -8,7 +8,7 @@ Step 1: Create a BMS
 Scenarios
 ---------
 
-This section helps you quickly create a BMS that will be used as a web server. For details about all the parameters used for creating a BMS, see :ref:`Region and AZ <en-us_topic_0083745259>`. To create a BMS by calling an API, see `Creating a BMS <https://docs.otc.t-systems.com/en-us/api/bms/en-us_topic_0053158682.html>`__.
+This section helps you quickly create a BMS that will be used as a web server. For details about all the parameters used for creating a BMS, see :ref:`Region and AZ <en-us_topic_0083745259>`. To create a BMS by calling an API, see "Creating a BMS (Native OpenStack API)" in *Bare Metal Server API Reference*.
 
 Procedure
 ---------
