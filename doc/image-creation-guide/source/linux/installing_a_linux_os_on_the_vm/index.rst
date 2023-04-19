@@ -11,7 +11,6 @@ Installing a Linux OS on the VM
 -  :ref:`Ubuntu 18.04, Ubuntu 16.04, Ubuntu 14.04, and Debian 8.6 <en-us_topic_0081116640>`
 -  :ref:`SUSE 12 <en-us_topic_0081116809>`
 -  :ref:`CentOS 7.4 ARM <en-us_topic_0100489883>`
--  :ref:`XenServer 7.1 <en-us_topic_0151001259>`
 
 .. toctree::
    :maxdepth: 1
@@ -23,4 +22,3 @@ Installing a Linux OS on the VM
    ubuntu_18.04_ubuntu_16.04_ubuntu_14.04_and_debian_8.6
    suse_12
    centos_7.4_arm
-   xenserver_7.1

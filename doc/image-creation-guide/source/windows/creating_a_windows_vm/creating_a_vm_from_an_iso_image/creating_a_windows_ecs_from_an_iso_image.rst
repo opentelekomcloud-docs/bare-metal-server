@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0000001289739500:
 
-Creating a Windows ECS Using the ISO Image File
-===============================================
+Creating a Windows ECS from an ISO Image
+========================================
 
 Scenarios
 ---------
 
-This section describes how to create an ECS using the registered ISO image.
+This section describes how to create an ECS from a registered ISO image.
 
 Procedure
 ---------
@@ -24,9 +24,9 @@ Procedure
 #. Use an ISO image to create a Windows ECS.
 
    a. Click the **Private Images** tab. Locate the row that contains the ISO image and click **Create ECS** in the **Operation** column.
-
-      .. note::
-
-         If you are a DeC user, the **Create ECS** button in the **Operation** column will be unavailable for you because a DeC user cannot use an ISO image to create an ECS.
-
    b. Configure the ECS as prompted and click **OK**.
+
+Follow-up Procedure
+-------------------
+
+After the ECS is created, you can log in remotely to continue with OS and drivers installation.
