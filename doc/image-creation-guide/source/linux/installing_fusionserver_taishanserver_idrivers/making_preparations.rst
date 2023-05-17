@@ -12,21 +12,16 @@ Making Preparations
    -  CentOS 7.6: FusionServer iDriver-CentOS7.6-Driver-V116.zip
    -  RHEL 7.3: FusionServer iDriver-RHEL7.3-Driver-V116.zip
    -  Ubuntu 16.04: FusionServer iDriver-Ubuntu16.04-Driver-V116.zip
-   -  XenServer 7.1: FusionServer iDriver-Citrix7.1-Driver-V109.zip
    -  EulerOS 2.8 ARM: TaiShanServer iDriver-EulerOS2.8-Driver-V103.zip
    -  CentOS 7.6 ARM: TaiShanServer iDriver-CentOS7.6-Driver-V112.zip
 
-#. Obtain the installation packages. (Examples for installing V5 server drivers: CentOS 7.6 and XenServer 7.1; examples for installing TaiShan server drivers: EulerOS 2.8 ARM and CentOS 7.6 ARM)
+#. Obtain the installation packages. (Example for installing V5 server drivers: CentOS 7.6; examples for installing TaiShan server drivers: EulerOS 2.8 ARM and CentOS 7.6 ARM)
 
    -  CentOS 7.6
 
       Download and decompress the **FusionServer iDriver-CentOS7.6-Driver-V116.zip** driver package to obtain the **onboard_driver_CentOS7.6.iso** file. Decompress **onboard_driver_CentOS7.6.iso** to obtain the **NIC-X710_X722_XL710_XXV710-CentOS7.6-i40e-2.15.9-1-x86_64.rpm**, **RAID-3008IR_3008IT_3408IT_3416IT-CentOS7.6-mpt3sas-27.00.00.00-1-x86_64.rpm**, and **RAID-3004iMR_3108_3408iMR_3416iMR_3508_3516-CentOS7.6-megaraid_sas-07.716.01.00-1-x86_64.rpm** files.
 
       The **NIC-X710_X722_XL710_XXV710-CentOS7.6-i40e-2.15.9-1-x86_64.rpm**, **RAID-3008IR_3008IT_3408IT_3416IT-CentOS7.6-mpt3sas-27.00.00.00-1-x86_64.rpm**, and **RAID-3004iMR_3108_3408iMR_3416iMR_3508_3516-CentOS7.6-megaraid_sas-07.716.01.00-1-x86_64.rpm** files are used to install LOM drivers, mpt3 drivers, and megaraid_sas drivers of V5 servers, respectively.
-
-   -  XenServer 7.1
-
-      Download and decompress the **FusionServer iDriver-Citrix7.1-Driver-V109.zip** driver package to obtain **onboard_driver_Citrix7.1.iso** and **NIC-X710_X722_XL710-Citrix7.1-i40e-2.0.23-1-x86_64.iso**. Decompress **onboard_driver_Citrix7.1.iso** to obtain the **RAID-3004iMR_3108_3408iMR_3416iMR_3508_3516-Citrix7.1-megaraid_sas-07.716.01.00-1-x86_64.rpm** file. Decompress the **NIC-X710_X722_XL710-Citrix7.1-i40e-2.0.23-1-x86_64.iso** package and obtain the **intel-i40e-2.0.23-1.x86_64.rpm** package from the **Packages** directory. The **intel-i40e-2.0.23-1.x86_64.rpm** package is used to install megaraid_sas and LOM drivers.
 
    -  EulerOS 2.8 ARM
 

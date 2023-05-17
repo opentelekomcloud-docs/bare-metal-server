@@ -24,6 +24,10 @@ Configuring the VNC Service
 
    a. Run the **lsblk** command (the OS ISO file must have been mounted to the BMC virtual CD-ROM drive. If not, mount the ISO file in the same way as you mount it during OS installation).
 
+      .. note::
+
+         If you cannot log in to or perform operations on BMC, contact O&M administrators.
+
    b. Locate the block device whose **name** is **sr0** and **type** is **rom**, and check whether any directories are mounted to the mount point. If no, run the following command:
 
       **mount /dev/sr0 /mnt**

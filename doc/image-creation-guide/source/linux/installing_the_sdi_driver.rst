@@ -8,7 +8,7 @@ Installing the SDI Driver
 Scenario
 --------
 
-Currently, there are three types of SDI cards: SDI storage cards, SDI 2.2 (network cards), and SDI 3.0 (integrated storage and network cards). If the BMS uses SDI storage cards (neither SDI 2.2 nor SDI 3.0), the SDI driver needs to be installed on the VM so that EVS disks can be attached to the BMS. In other cases, skip this section. Currently, ARM 64, XenServer, and ESXi VMs do not support SDI cards. You do not need to install the SDI driver on such VMs.
+Currently, there are three types of SDI cards: SDI storage cards, SDI 2.2 (network cards), and SDI 3.0 (integrated storage and network cards). If the BMS uses SDI storage cards (neither SDI 2.2 nor SDI 3.0), the SDI driver needs to be installed on the VM so that EVS disks can be attached to the BMS. In other cases, skip this section. Currently, ARM 64 VMs do not support SDI cards. You do not need to install the SDI driver on such VMs.
 
 Prerequisites
 -------------

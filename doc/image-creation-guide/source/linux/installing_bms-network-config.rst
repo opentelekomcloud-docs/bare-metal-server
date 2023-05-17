@@ -46,10 +46,6 @@ Prerequisites
 Procedure
 ---------
 
-.. note::
-
-   The procedure for XenServer is different from other OSs. For details, see :ref:`Procedure (XenServer) <en-us_topic_0081116559__en-us_topic_0094568715_section4857115185017>`.
-
 #. Enter the directory where the bms-network-config software package is stored and run the **rpm -ivh**\ *bms-network-config-1.0-7.centosRedhat7.x86_64.rpm* command.
 
    .. code-block:: console
@@ -138,14 +134,5 @@ Procedure
       WantedBy=multi-user.target
 
    If the startup sequence is incorrect, use the **vim /usr/lib/systemd/system/bms-network-config.service** command to correct it.
-
-.. _en-us_topic_0081116559__en-us_topic_0094568715_section4857115185017:
-
-Procedure (XenServer)
----------------------
-
-#. Extract **xenserver-bms-config.zip** from **bms-network-config**.
-#. Create the **/opt/huawei** directory and put **GetVpcNicMac.sh**, **unique-uuid-config.sh**, and **xenserver-bms-network-config.sh** in this directory. Run the **chmod +x** *Script name* command to make these scripts executable.
-#. Put the **xenserverInit.service** file in the **/usr/lib/systemd/system/** directory and run the **systemctl daemon-reload** command to update system services.
 
 .. |image1| image:: /_static/images/en-us_image_0140670562.png

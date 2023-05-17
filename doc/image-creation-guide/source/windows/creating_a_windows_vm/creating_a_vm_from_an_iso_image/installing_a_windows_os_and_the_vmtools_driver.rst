@@ -82,7 +82,7 @@ Procedure
 
       The **Where do you want to install Windows?** window is displayed.
 
-      -  If the system displays a message indicating that no driver is found, go to :ref:`1.g <en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0197322905_en-us_topic_0146474784_li2827143133314>`.
+      -  If the system displays a message indicating that no driver is found, go to :ref:`1.g <en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li2827143133314>`.
 
 
          .. figure:: /_static/images/en-us_image_0160277563.png
@@ -90,7 +90,7 @@ Procedure
 
             **Figure 6** Installation path
 
-      -  If a disk is displayed, go to :ref:`1.j <en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0197322905_en-us_topic_0146474784_li98272043173314>`.
+      -  If a disk is displayed, go to :ref:`1.j <en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li98272043173314>`.
 
 
          .. figure:: /_static/images/en-us_image_0160277966.png
@@ -98,7 +98,7 @@ Procedure
 
             **Figure 7** Installation path
 
-   g. .. _en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0197322905_en-us_topic_0146474784_li2827143133314:
+   g. .. _en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li2827143133314:
 
       Click **Load Driver** and then **Browse**.
 
@@ -122,7 +122,7 @@ Procedure
 
          **Figure 9** Selecting the driver to install
 
-   j. .. _en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0197322905_en-us_topic_0146474784_li98272043173314:
+   j. .. _en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li98272043173314:
 
       Select the disk and click **Next**.
 

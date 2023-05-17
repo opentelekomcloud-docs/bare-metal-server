@@ -20,7 +20,7 @@ Procedure
 
 #. Add or modify the configuration file.
 
-   -  For Red Hat/Oracle Linux/EulerOS/OpenEuler/SUSE 12/SUSE 15/CentOS/XenServer, use the vi editor to open the **/etc/dracut.conf** file and change or add the value of **add_drivers**. In the following example, the value of **add_drivers** is a list of RAID drivers.
+   -  For Red Hat/Oracle Linux/EulerOS/OpenEuler/SUSE 12/SUSE 15/CentOS, use the vi editor to open the **/etc/dracut.conf** file and change or add the value of **add_drivers**. In the following example, the value of **add_drivers** is a list of RAID drivers.
 
       .. code-block::
 
@@ -90,9 +90,9 @@ Procedure
 
 #. Update the kernel. For Ubuntu 16.04 ARM and Ubuntu 18.04 ARM, skip this step.
 
-   For Rad Hat/Oracle Linux/EulerOS/SUSE 12/SUSE 15/Ubuntu 16.04/Ubuntu 18.04/CentOS/XenServer run the **dracut -f** command.
+   For Rad Hat/Oracle Linux/EulerOS/SUSE 12/SUSE 15/Ubuntu 16.04/Ubuntu 18.04/CentOS run the **dracut -f** command.
 
-   -  For Rad Hat/Oracle Linux/EulerOS/OpenEuler/CentOS/XenServer, run the **dracut -f** command. Wait for several seconds. If no command output is returned, the drivers have been loaded.
+   -  For Rad Hat/Oracle Linux/EulerOS/OpenEuler/CentOS, run the **dracut -f** command. Wait for several seconds. If no command output is returned, the drivers have been loaded.
 
    -  For SUSE 12 SP1, run the **dracut -f** command. Check the command output in the last few lines. If message "Some kernel modules could not be included. This is not necessarily an error:" is displayed and drivers not loaded are displayed (excluding the RAID drivers), the RAID drivers are loaded successfully.
 

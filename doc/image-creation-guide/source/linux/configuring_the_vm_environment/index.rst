@@ -10,7 +10,6 @@ Configuring the VM Environment
 -  :ref:`Configuring the Network <en-us_topic_0000001194358208>`
 -  :ref:`Configuring systemd Timeout Parameters <en-us_topic_0000001239038181>`
 -  :ref:`Disabling the Firewall <en-us_topic_0000001238958151>`
--  :ref:`(Optional) Configuring the DNS Server <en-us_topic_0000001194038232>`
 -  :ref:`(Optional) Upgrading Wicked Components <en-us_topic_0000001238838165>`
 -  :ref:`(Optional) Disabling NetworkManager <en-us_topic_0000001238718197>`
 -  :ref:`(Optional) Deleting the Network Management Tool Plug-in <en-us_topic_0000001193878272>`
@@ -29,7 +28,6 @@ Configuring the VM Environment
    configuring_the_network
    configuring_systemd_timeout_parameters
    disabling_the_firewall
-   optional_configuring_the_dns_server
    optional_upgrading_wicked_components
    optional_disabling_networkmanager
    optional_deleting_the_network_management_tool_plug-in

@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0081116632:
 
-SUSE 12 SP2/SUSE 12 SP3/SUSE 15/Oracle Linux 7/Red Hat 7/CentOS 7/CentOS 8/XenServer 7
-======================================================================================
+SUSE 12 SP2/SUSE 12 SP3/SUSE 15/Oracle Linux 7/Red Hat 7/CentOS 7/CentOS 8
+==========================================================================
 
 #. .. _en-us_topic_0081116632__en-us_topic_0094568857_li1344312814509:
 

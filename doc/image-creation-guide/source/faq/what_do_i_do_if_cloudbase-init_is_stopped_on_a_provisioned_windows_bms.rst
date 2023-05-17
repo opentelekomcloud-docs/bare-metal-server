@@ -5,6 +5,10 @@
 What Do I Do If Cloudbase-Init Is Stopped on a Provisioned Windows BMS?
 =======================================================================
 
+.. note::
+
+   If you cannot log in to or perform operations on BMC, contact O&M administrators.
+
 Symptom
 -------
 

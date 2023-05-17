@@ -5,7 +5,7 @@
 Overview
 ========
 
-You can install growpart to automatically extend the root partition. For SUSE, growpart is installed by default. However, for SUSE 11 SP4, you need to install growpart with an earlier version to replace the default one. For other SUSE distributions, you do not need to install growpart. For Ubuntu, growpart is installed by default and the version meets requirements. Therefore, you do not need to install growpart. For XenServer, partitions can be selected during the OS installation. Therefore, automatic root partition extension is not supported.
+You can install growpart to automatically extend the root partition. For SUSE, growpart is installed by default. However, for SUSE 11 SP4, you need to install growpart with an earlier version to replace the default one. For other SUSE distributions, you do not need to install growpart. For Ubuntu, growpart is installed by default and the version meets requirements. Therefore, you do not need to install growpart.
 
 .. note::
 

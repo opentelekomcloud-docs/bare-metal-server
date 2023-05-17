@@ -13,4 +13,4 @@ For Red Hat 7 or CentOS 7, cloud-init-local may fail to start up. As a result, B
 Solution
 --------
 
-For Red Hat 7 and CentOS 7, if the libselinux version is earlier than 2.5.7, cloud-init-local may fail to start up. This is a known issue and has been fixed in libselinux 2.5.7. For details, see https://bugzilla.redhat.com/show_bug.cgi?id=1406520. If you are creating a Red Hat 7 or CentOS 7 image, upgrade libselinux to 2.5.7 or later after you configure the yum source in :ref:`XenServer <en-us_topic_0100489885>`.
+For Red Hat 7 and CentOS 7, if the libselinux version is earlier than 2.5.7, cloud-init-local may fail to start up. This is a known issue and has been fixed in libselinux 2.5.7. For details, see https://bugzilla.redhat.com/show_bug.cgi?id=1406520. If you are creating a Red Hat 7 or CentOS 7 image, upgrade libselinux to 2.5.7 or later after you configure the yum source in section "Installing Cloud-Init > SUSE/Red Hat/CentOS/Oracle Linux/Ubuntu/Debian > CentOS".
