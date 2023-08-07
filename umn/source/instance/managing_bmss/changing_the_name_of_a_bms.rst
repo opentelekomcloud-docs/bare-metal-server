@@ -32,15 +32,13 @@ Procedure
 
 #. Log in to the BMS OS and run the following command to enable automatic hostname synchronization:
 
-   **vi /opt/huawei/network_config/bms-network-config.conf**
+   **sed -i 's/auto_synchronize_hostname.*/auto_synchronize_hostname = True/g' \`find / -name bms-network-config.conf**
 
-   Set the value of **auto_synchronize_hostname** to **True**.
+   Check that automatic synchronization is enabled.
 
-   .. code-block::
+   **cat \`find / -name bms-network-config.conf**
 
-      auto_synchronize_hostname = True
-
-   Press **Esc** and enter **:wq** to save and exit the file.
+   |image3|
 
    .. note::
 
@@ -52,3 +50,4 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0259262516.png
 .. |image2| image:: /_static/images/en-us_image_0176591271.png
+.. |image3| image:: /_static/images/en-us_image_0000001562180958.png

@@ -5,7 +5,7 @@
 Network
 =======
 
-BMS provides four types of networks: VPC, high-speed network, user-defined VLAN, and IB network. They are isolated from each other.
+BMS provides five types of networks: VPC, high-speed network, enhanced high-speed network, user-defined VLAN, and IB network. They are isolated from each other.
 
 VPC and high-speed network interfaces are VLAN sub-interfaces created after system maintenance VLAN NICs are bonded. You can manage and configure NICs of user-defined VLANs and IB networks.
 
