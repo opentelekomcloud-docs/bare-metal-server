@@ -16,6 +16,7 @@ Network and Security FAQ
 -  :ref:`What Do I Do If the Communication Between the Primary NIC and Extension NIC of the BMS is Abnormal? <en-us_topic_0151841132>`
 -  :ref:`How Can I Configure a Static IP Address for a BMS? <en-us_topic_0151841133>`
 -  :ref:`How Do I Configure the DNS Server? <en-us_topic_0118945920>`
+-  :ref:`What Do I Do If the Network Performance Is Poor When 128 Ethernet Network Devices Are Bound to a BMS? <en-us_topic_0170005210>`
 
 .. toctree::
    :maxdepth: 1
@@ -32,3 +33,4 @@ Network and Security FAQ
    what_do_i_do_if_the_communication_between_the_primary_nic_and_extension_nic_of_the_bms_is_abnormal
    how_can_i_configure_a_static_ip_address_for_a_bms
    how_do_i_configure_the_dns_server
+   what_do_i_do_if_the_network_performance_is_poor_when_128_ethernet_network_devices_are_bound_to_a_bms

@@ -32,15 +32,13 @@ This method has the following restrictions:
 
    Log in to the BMS OS and run the following command to enable automatic hostname synchronization:
 
-   **vi /opt/huawei/network_config/bms-network-config.conf**
+   **sed -i 's/auto_synchronize_hostname.*/auto_synchronize_hostname = True/g' \`find / -name bms-network-config.conf**
 
-   Set the value of **auto_synchronize_hostname** to **True**.
+   Check that automatic synchronization is enabled.
 
-   .. code-block::
+   **cat \`find / -name bms-network-config.conf**
 
-      auto_synchronize_hostname = True
-
-   Press **Esc** and enter **:wq** to save and exit the file.
+   |image3|
 
 #. Log in to the management console again. Locate the row that contains the BMS, click **More** in the **Operation** column, and select **Restart**.
 
@@ -109,17 +107,9 @@ For example, if the changed host name is *new_hostname*, perform the following s
 
    The value of parameter **enable_preserve_hostname** in the **bms-network-config.conf** file is **False** by default, indicating that the host name is updated each time the board resets. To disable this function, change its value to **True**.
 
-   a. Run the following command to edit the configuration script **bms-network-config.conf**:
+   a. Change the value of **enable_preserve_hostname** in the **bms-network-config.conf** file to **True**:
 
-      **sudo vim /opt/huawei/network_config/bms-network-config.conf**
-
-   b. Set the value of **enable_preserve_hostname** to **True**.
-
-      **enable_preserve_hostname: True**
-
-   c. Run the following command to save and exit the configuration file:
-
-      **:wq!**
+      **sed -i 's/enable_preserve_hostname.*/enable_preserve_hostname = True/g' \`find / -name bms-network-config.conf**
 
 #. (Optional) For SUSE, modify the configuration file **/etc/sysconfig/network/dhcp**.
 
@@ -147,3 +137,4 @@ For example, if the changed host name is *new_hostname*, perform the following s
 
 .. |image1| image:: /_static/images/en-us_image_0284616146.png
 .. |image2| image:: /_static/images/en-us_image_0284616147.png
+.. |image3| image:: /_static/images/en-us_image_0000001562346554.png

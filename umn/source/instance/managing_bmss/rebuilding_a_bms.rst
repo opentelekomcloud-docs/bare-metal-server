@@ -68,13 +68,19 @@ Procedure
             BROADCAST=172.31.0.255
             NETMASK=255.255.255.0
 
-      c. Change the value of **enable_ib** in the **/opt/huawei/network_config/bms-network-config.conf** file to **False**.
+      c. Change the value of **enable_ib** in the **bms-network-config.conf** file to **False**.
+
+         **sed -i 's/enable_ib.*/enable_ib = False/g' \`find / -name bms-network-config.conf**
+
+         Check that the value has been changed.
+
+         **cat \`find / -name bms-network-config.conf**
 
 
          .. figure:: /_static/images/en-us_image_0143392043.png
-            :alt: **Figure 1** Changing the parameter value
+            :alt: **Figure 1** Checking the value of enable_ib
 
-            **Figure 1** Changing the parameter value
+            **Figure 1** Checking the value of enable_ib
 
       d. Save the configuration and exit. Then restart the NIC.
 
