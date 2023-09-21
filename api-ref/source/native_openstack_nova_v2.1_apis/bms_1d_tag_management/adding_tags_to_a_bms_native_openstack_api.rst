@@ -42,7 +42,7 @@ PUT /v2.1/{project_id}/servers/{server_id}/tags
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | server_id             | Yes                   | Specifies the BMS ID.                                                                                                                                 |
    |                       |                       |                                                                                                                                                       |
-   |                       |                       | You can obtain the BMS ID from the BMS console or using the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>` API.                 |
+   |                       |                       | You can obtain the BMS ID from the BMS console or by calling the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>`.                |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Request

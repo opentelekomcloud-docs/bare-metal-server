@@ -30,7 +30,7 @@ PUT /v2.1/{project_id}/servers/{server_id}
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | server_id             | Yes                   | Specifies the BMS ID.                                                                                                                                 |
    |                       |                       |                                                                                                                                                       |
-   |                       |                       | You can obtain the BMS ID from the BMS console or using the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>` API.                 |
+   |                       |                       | You can obtain the BMS ID from the BMS console or by calling the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>`.                |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Request
@@ -87,7 +87,6 @@ Response
    |                       |                       | -  **ERROR**: Faulty                                                                                                                                                                              |
    |                       |                       | -  **HARD_REBOOT**: Forcibly Restarting                                                                                                                                                           |
    |                       |                       | -  **REBOOT**: Restarting                                                                                                                                                                         |
-   |                       |                       | -  **DELETED**: Deleted                                                                                                                                                                           |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | created               | String                | Specifies the time when the BMS was created.                                                                                                                                                      |
    |                       |                       |                                                                                                                                                                                                   |

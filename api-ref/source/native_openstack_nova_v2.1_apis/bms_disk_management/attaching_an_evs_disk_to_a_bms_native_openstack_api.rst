@@ -14,7 +14,7 @@ Constraints
 -----------
 
 -  A bootable disk cannot be attached to a BMS.
--  A disk cannot be attached to a BMS when the BMS is in the **SUSPENDED** or **PAUSED** state, which is specified using the **OS-EXT-STS:vm_state** parameter.
+-  A disk cannot be attached to a BMS when the BMS is in the **PAUSED** state, which is specified using the **OS-EXT-STS:vm_state** parameter.
 -  Only a shared disk or a disk in the **available** state can be attached to a BMS.
 -  Only EVS disks whose device type is **SCSI** can be attached to a BMS.
 
@@ -38,7 +38,7 @@ POST /v2.1/{project_id}/servers/{server_id}/os-volume_attachments
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | server_id             | Yes                   | Specifies the BMS ID.                                                                                                                                 |
    |                       |                       |                                                                                                                                                       |
-   |                       |                       | You can obtain the BMS ID from the BMS console or using the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>` API.                 |
+   |                       |                       | You can obtain the BMS ID from the BMS console or by calling the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>`.                |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Request
