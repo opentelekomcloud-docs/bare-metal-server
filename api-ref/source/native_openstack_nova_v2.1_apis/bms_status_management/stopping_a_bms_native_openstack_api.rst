@@ -13,7 +13,7 @@ This API is used to stop a single BMS.
 Constraints
 -----------
 
--  The BMS **OS-EXT-STS:vm_state** attribute (BMS status) must be **active** or **error**.
+-  The **OS-EXT-STS:vm_state** attribute (BMS status) must be **active** or **error**.
 -  Currently, only forcible stopping is supported.
 
 URI
@@ -36,7 +36,7 @@ POST /v2.1/{project_id}/servers/{server_id}/action
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | server_id             | Yes                   | Specifies the BMS ID.                                                                                                                                 |
    |                       |                       |                                                                                                                                                       |
-   |                       |                       | You can obtain the BMS ID from the BMS console or using the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>` API.                 |
+   |                       |                       | You can obtain the BMS ID from the BMS console or by calling the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>`.                |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Request
