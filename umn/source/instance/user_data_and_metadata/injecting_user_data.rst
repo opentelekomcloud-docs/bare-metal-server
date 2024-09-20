@@ -228,7 +228,7 @@ Case 2
 
 This case illustrates how to inject user data so as to reset the password for logging in to a Linux BMS.
 
-In this example, the password of user **root** will be reset to ``"******".``
+In this example, the password of user **root** will be reset to\ ``"******".``
 
 .. note::
 
@@ -247,7 +247,7 @@ In this example, the password of user **root** will be reset to ``"******".``
    |                       |    -  Uppercase letters                                                                                                                          |                       |
    |                       |    -  Lowercase letters                                                                                                                          |                       |
    |                       |    -  Digits                                                                                                                                     |                       |
-   |                       |    -  Special characters ``!@$%^-_=+[]{}:,./?``                                                                                                  |                       |
+   |                       |    -  Special characters\ ``!@$%^-_=+[]{}:,./?``                                                                                                 |                       |
    |                       |                                                                                                                                                  |                       |
    |                       | -  Cannot contain the username or the username spelled backwards.                                                                                |                       |
    |                       | -  Cannot contain more than two characters in the same sequence as they appear in the username. (This requirement applies only to Windows BMSs.) |                       |
@@ -289,7 +289,7 @@ In this example, the user's username is **abc**, its password is **\*****\***, a
    |                       |    -  Uppercase letters                                                                                                                          |                       |
    |                       |    -  Lowercase letters                                                                                                                          |                       |
    |                       |    -  Digits                                                                                                                                     |                       |
-   |                       |    -  Special characters ``!@$%^-_=+[]{}:,./?``                                                                                                  |                       |
+   |                       |    -  Special characters\ ``!@$%^-_=+[]{}:,./?``                                                                                                 |                       |
    |                       |                                                                                                                                                  |                       |
    |                       | -  Cannot contain the username or the username spelled backwards.                                                                                |                       |
    |                       | -  Cannot contain more than two characters in the same sequence as they appear in the username. (This requirement applies only to Windows BMSs.) |                       |

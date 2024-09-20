@@ -5,7 +5,7 @@
 How Do I Set SSH Configuration Items?
 =====================================
 
-You can select the BMS login mode or account type. If you have requirements for special configuration, perform the following operations:
+You can select the BMS login mode or account type. If you require special configuration, perform the following operations:
 
 #. To improve security of the BMS, disable remote login using the password and retain only the certificate login mode. Configure the following parameters:
 

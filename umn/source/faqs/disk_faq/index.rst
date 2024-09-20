@@ -13,7 +13,7 @@ Disk FAQ
 -  :ref:`Why Is the EVS Disk Size Not Updated in the BMS OS After the EVS Disk Capacity Has Been Expanded? <en-us_topic_0078771806>`
 -  :ref:`How Can I Restore System Disk Data Using the Snapshot? <en-us_topic_0078771807>`
 -  :ref:`What Do I Do to Prevent Risks of Attaching or Detaching the System Disk? <en-us_topic_0078771808>`
--  :ref:`How Should I Select Storage? <en-us_topic_0092358576>`
+-  :ref:`How Do I Select Storage? <en-us_topic_0092358576>`
 -  :ref:`Why Is the Disk Capacity Displayed in the BMS OS Less Than That Displayed on the Official Website? <en-us_topic_0094808032>`
 
 .. toctree::
@@ -28,5 +28,5 @@ Disk FAQ
    why_is_the_evs_disk_size_not_updated_in_the_bms_os_after_the_evs_disk_capacity_has_been_expanded
    how_can_i_restore_system_disk_data_using_the_snapshot
    what_do_i_do_to_prevent_risks_of_attaching_or_detaching_the_system_disk
-   how_should_i_select_storage
+   how_do_i_select_storage
    why_is_the_disk_capacity_displayed_in_the_bms_os_less_than_that_displayed_on_the_official_website

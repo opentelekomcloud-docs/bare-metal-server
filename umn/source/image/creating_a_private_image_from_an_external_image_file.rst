@@ -23,12 +23,19 @@ The procedure contains the following steps:
 #. Upload the image file to your OBS bucket. For details, see :ref:`Upload an External Image File <en-us_topic_0078468105__section175082275342>`.
 #. On the management console, select the uploaded image file and register it as a private image. For details, see :ref:`Register a Private Image <en-us_topic_0078468105__section17202836566>`.
 
+Constraints
+-----------
+
+You can import an image file in VHD, VMDK, QCOW2, RAW, VHDX, QCOW, VDI, QED, ZVHD, or ZVHD2 format to create a private image.
+
+.. note::
+
+   Images of other formats must be converted using the image conversion tool before they can be used on BMSs. For details about how to convert the image format, see Image Management Service User Guide.
+
 .. _en-us_topic_0078468105__section175082275342:
 
 Upload an External Image File
 -----------------------------
-
-You can import an image file in VHD, VMDK, QCOW2, RAW, VHDX, QCOW, VDI, QED, ZVHD, or ZVHD2 format to create a private image.
 
 Use OBS Browser to upload external image files. For details, see *Object Storage Service User Guide*.
 

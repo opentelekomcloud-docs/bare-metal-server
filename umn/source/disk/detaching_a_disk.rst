@@ -11,7 +11,13 @@ Scenarios
 A disk attached to a BMS can be detached.
 
 -  A disk mounted to **/dev/sda** functions as the system disk. You can only detach the system disk from a stopped BMS.
--  Disks mounted to a mount point other than **/dev/sda** function as data disks and can be detached from a running or stopped BMS.
+-  Disks attached to a mount point other than **/dev/sda** function as data disks and can be detached from a running or stopped BMS.
+
+.. note::
+
+   After a BMS is restarted, the drive letter of an EVS disk attached to the BMS may change to the one different from that in the OS.
+
+   So, you are advised to use a world wide name (WWN) instead of a driver letter when you perform operations on disks. For details about the mapping between a WWN and driver letter, see :ref:`How Do I Obtain the Drive Letter of an EVS Disk? <en-us_topic_0102493013>`
 
 Constraints
 -----------

@@ -25,13 +25,4 @@ For details about how to configure a user-defined VLAN for BMSs running differen
 View User-defined VLANs
 -----------------------
 
-User-defined VLANs are presented to you through the BMS specifications shown in :ref:`Figure 1 <en-us_topic_0085714156__fig465385574917>`.
-
-.. _en-us_topic_0085714156__fig465385574917:
-
-.. figure:: /_static/images/en-us_image_0162820961.png
-   :alt: **Figure 1** BMS specifications
-
-   **Figure 1** BMS specifications
-
-A BMS created using this flavor provides one two-port 10GE NIC for connecting to the VPC as well as one two-port 10GE extension NIC for a high-speed interconnection between BMSs. You can configure VLANs on the extension NIC as needed.
+User-defined VLANs are presented to you through the BMS specifications. For example, if the extended configuration of a flavor is 2 x 2*10GE, a BMS created using this flavor provides one two-port 10GE NIC for connecting to the VPC as well as one two-port 10GE extension NIC for a high-speed interconnection between BMSs. You can configure VLANs on the extension NIC as needed.

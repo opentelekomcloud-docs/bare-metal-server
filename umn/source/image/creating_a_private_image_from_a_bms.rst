@@ -13,7 +13,7 @@ You can create a private image from a BMS and copy the system disk data of the B
 Constraints
 -----------
 
--  This operation is supported only when the system disk is an EVS disk.
+-  Currently, only a BMS that supports quick provisioning (the OS is installed on an EVS disk) can be used to create a private image.
 -  Data disks of a BMS cannot be exported as images.
 -  The BMS must be stopped.
 -  This operation depends on the bms-network-config and Cloud-Init plug-ins in the BMS image.
