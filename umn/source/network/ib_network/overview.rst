@@ -43,7 +43,7 @@ IB networks are presented to you through the BMS specifications shown in :ref:`F
 
 .. _en-us_topic_0122234356__fig1680973135611:
 
-.. figure:: /_static/images/en-us_image_0160982905.png
+.. figure:: /_static/images/en-us_image_0000001920389784.png
    :alt: **Figure 1** BMS extended configuration
 
    **Figure 1** BMS extended configuration

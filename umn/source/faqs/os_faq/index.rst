@@ -6,9 +6,9 @@ OS FAQ
 ======
 
 -  :ref:`Can I Install or Upgrade BMS OSs by Myself? <en-us_topic_0053536926>`
--  :ref:`Can the BMS OS Be Replaced? <en-us_topic_0053536901>`
--  :ref:`Is a GUI Provided for BMS OSs? <en-us_topic_0053536939>`
--  :ref:`Is an Upload Tool Delivered with BMS OSs? <en-us_topic_0053536937>`
+-  :ref:`Can I Change the OS of a BMS? <en-us_topic_0053536901>`
+-  :ref:`Is a GUI Provided for a BMS OS? <en-us_topic_0053536939>`
+-  :ref:`Is an Upload Tool Delivered with a BMS OS? <en-us_topic_0053536937>`
 -  :ref:`Does the Public Image Used to Create a BMS Have a Swap Partition? <en-us_topic_0213378833>`
 -  :ref:`How Do I Configure the Static Host Name of a BMS? <en-us_topic_0068279730>`
 -  :ref:`How Do I Set the Password Validity Period? <en-us_topic_0079122353>`
@@ -26,9 +26,9 @@ OS FAQ
    :hidden: 
 
    can_i_install_or_upgrade_bms_oss_by_myself
-   can_the_bms_os_be_replaced
-   is_a_gui_provided_for_bms_oss
-   is_an_upload_tool_delivered_with_bms_oss
+   can_i_change_the_os_of_a_bms
+   is_a_gui_provided_for_a_bms_os
+   is_an_upload_tool_delivered_with_a_bms_os
    does_the_public_image_used_to_create_a_bms_have_a_swap_partition
    how_do_i_configure_the_static_host_name_of_a_bms
    how_do_i_set_the_password_validity_period

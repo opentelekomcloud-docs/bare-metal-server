@@ -25,5 +25,5 @@ Procedure
 The following procedure describes how to log in to a Windows BMS using **mstsc.exe**.
 
 #. On the local PC, click **Start**.
-#. In the **Search programs and files** box, enter **mstsc.exe** and press **Enter**.
-#. Enter the EIP and username of the Windows BMS, click **Connect**, enter the password as prompted, and click **OK** to log in to the BMS.
+#. In the **Search programs and files** text box, enter **mstsc.exe**.
+#. Enter the EIP and username of the Windows BMS, click **Connect**, enter the password as prompted, and click **OK**.

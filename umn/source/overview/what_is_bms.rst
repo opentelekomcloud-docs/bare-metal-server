@@ -8,7 +8,7 @@ What Is BMS?
 Overview
 --------
 
-A Bare Metal Server (BMS) features both the scalability of Elastic Cloud Servers (ECSs) and high performance of physical servers. It provides dedicated servers on the cloud, delivering the performance and security required by core databases, critical applications, high-performance computing (HPC), and Big Data.
+Bare Metal Server (BMS) features both the scalability of Elastic Cloud Server (ECS) and high performance of physical servers. It provides dedicated servers on the cloud, delivering the performance and security required by core databases, critical applications, high-performance computing (HPC), and big data.
 
 The BMS self-service feature allows you to apply for and use a BMS on demand. To apply for a BMS, you need to specify the server type, image, required network, and other configurations. You can obtain the BMS you require within 30 minutes.
 

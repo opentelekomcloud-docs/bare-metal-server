@@ -23,9 +23,9 @@ Compatible with various mainstream hypervisors such as VMware, Citrix XenServer,
 Quick Provisioning and Unified O&M
 ----------------------------------
 
-The required BMSs can be provisioned within minutes after you submit an order. You can manage your BMSs through their lifecycle from the management console or using open APIs with SDKs.
+The required BMSs can be provisioned within minutes after you submit an order. You can manage your BMSs throughout their lifecycle from the management console or using open APIs with SDKs.
 
 Quick Integration of Cloud Services and Solutions
 -------------------------------------------------
 
-Based on the unified VPC model, cloud services and cloud solutions (such as database, big data, container, HPC, and AI solutions) can be quickly integrated to run on BMSs. This accelerates cloud transformation.
+Based on the unified VPC model, cloud services and solutions (such as database, big data, container, HPC, and AI solutions) can be quickly integrated to run on BMSs. This accelerates cloud transformation.

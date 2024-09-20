@@ -306,7 +306,7 @@ This interface is used to query the flavor name of a BMS.
 
    .. code-block::
 
-      physical.o2.medium
+      physical.i7n.28xlarge.4
 
 Local IPv4 (EC2 Compatible API)
 -------------------------------
