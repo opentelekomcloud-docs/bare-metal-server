@@ -31,6 +31,10 @@ Procedure
          # additional kernel modules to the default
          add_drivers+="ahci megaraid_sas mpt3sas mpt2sas virtio_blk virtio_scsi virtio_net"
 
+      .. note::
+
+         If an error is reported, add a space before and after the driver list in the quotation marks and try again.
+
    -  For Ubuntu 14.04 or Debian, use the vi editor to open the **/etc/initramfs-tools/modules** file and add ahci, megaraid_sas, mpt3sas, and mpt2sas drivers (the format depends on the OS).
 
       .. code-block::
@@ -61,6 +65,10 @@ Procedure
          **apt-get install dracut**
 
          After the installation is complete, add **add_drivers+="ahci megaraid_sas mpt3sas mpt2sas virtio_blk virtio_scsi virtio_net"** to the end of the **/etc/dracut.conf** file by performing operations similar to those for Red Hat and Oracle Linux 7.3.
+
+         .. note::
+
+            If an error is reported, add a space before and after the driver list in the quotation marks and try again.
 
       b. Run the following command to install initramfs-tools:
 

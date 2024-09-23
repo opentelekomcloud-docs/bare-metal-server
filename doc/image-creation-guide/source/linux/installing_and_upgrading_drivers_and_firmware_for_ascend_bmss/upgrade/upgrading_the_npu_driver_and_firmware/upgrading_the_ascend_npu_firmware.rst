@@ -2,10 +2,10 @@
 
 .. _en-us_topic_0000001117256554:
 
-Upgrading Ascend 910 NPU Firmware
+Upgrading the Ascend NPU Firmware
 =================================
 
-You can upgrade the firmware of the Ascend 910 NPU for Atlas 800 (model 9000) training servers. This section uses the **A800-9000-npu-firmware\_**\ *x.x.x*\ **.run** package as an example to describe how to upgrade NPU firmware.
+You can upgrade the firmware of Ascend NPUs for Atlas 800 (model 9000) training servers. This section uses the **A800-9000-npu-firmware\_**\ *x.x.x*\ **.run** package as an example to describe how to upgrade NPU firmware.
 
 **Procedure**
 

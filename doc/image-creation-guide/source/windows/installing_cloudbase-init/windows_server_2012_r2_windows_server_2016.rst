@@ -75,27 +75,40 @@ Windows Server 2012 R2/Windows Server 2016
 
          metadata_services=cloudbaseinit.metadata.services.httpservice.HttpService,cloudbaseinit.metadata.services.configdrive.ConfigDriveService
 
-   e. Add parameter **plugins** and configure the modules to be loaded. Separate different modules with commas (,). The information in bold is the keyword of each module.
+   e. Add parameter **plugins** to configure the plugins that will be loaded. Separate different plugins with commas (,). The information in bold is the keyword of each plugin.
 
-      The following is an example of the Cloudbase-Init file content:
+      -  Mandatory plugins:
 
-      .. code-block::
+         .. code-block::
 
-         plugins=cloudbaseinit.plugins.common.localscripts.LocalScriptsPlugin,cloudbaseinit.plugins.common.mtu.MTUPlugin,cloudbaseinit.plugins.windows.createuser.CreateUserPlugin,cloudbaseinit.plugins.common.setuserpassword.SetUserPasswordPlugin,cloudbaseinit.plugins.common.sshpublickeys.SetUserSSHPublicKeysPlugin,cloudbaseinit.plugins.common.sethostname.SetHostNamePlugin,cloudbaseinit.plugins.windows.extendvolumes.ExtendVolumesPlugin,cloudbaseinit.plugins.common.userdata.UserDataPlugin,cloudbaseinit.plugins.windows.winrmlistener.ConfigWinRMListenerPlugin,cloudbaseinit.plugins.windows.winrmcertificateauth.ConfigWinRMCertificateAuthPlugin,cloudbaseinit.plugins.windows.licensing.WindowsLicensingPlugin
+            plugins=cloudbaseinit.plugins.common.localscripts.LocalScriptsPlugin,cloudbaseinit.plugins.common.mtu.MTUPlugin,cloudbaseinit.plugins.windows.createuser.CreateUserPlugin,cloudbaseinit.plugins.common.setuserpassword.SetUserPasswordPlugin,cloudbaseinit.plugins.common.sshpublickeys.SetUserSSHPublicKeysPlugin,cloudbaseinit.plugins.common.sethostname.SetHostNamePlugin,cloudbaseinit.plugins.windows.extendvolumes.ExtendVolumesPlugin,cloudbaseinit.plugins.common.userdata.UserDataPlugin,cloudbaseinit.plugins.windows.licensing.WindowsLicensingPlugin
 
-      Functions of the modules are as follows:
+         Plugin functions:
 
-      -  **LocalScriptsPlugin**: sets the scripts.
-      -  **MTUPlugin**: sets the MTU network ports.
-      -  **CreateUserPlugin**: creates a user.
-      -  **SetUserPasswordPlugin**: sets the password.
-      -  **SetUserSSHPublicKeysPlugin**: sets the private key.
-      -  **SetHostNamePlugin**: sets the hostname.
-      -  **ExtendVolumesPlugin**: partitions the disks.
-      -  **UserDataPlugin**: injects user data.
-      -  **ConfigWinRMListenerPlugin**: sets listening to remote login.
-      -  **ConfigWinRMCertificateAuthPlugin**: sets remote login without the password authentication.
-      -  **WindowsLicensingPlugin**: activates Windows instances.
+         -  **LocalScriptsPlugin**: sets the scripts.
+         -  **MTUPlugin**: sets the MTU network ports.
+         -  **CreateUserPlugin**: creates a user.
+         -  **SetUserPasswordPlugin**: sets the password.
+         -  **SetUserSSHPublicKeysPlugin**: sets the private key.
+         -  **SetHostNamePlugin**: sets the hostname.
+         -  **ExtendVolumesPlugin**: expands disk space.
+         -  **UserDataPlugin**: injects user data.
+         -  **WindowsLicensingPlugin**: activates Windows instances.
+
+      -  Optional plugins:
+
+         .. code-block::
+
+            plugins=cloudbaseinit.plugins.windows.winrmlistener.ConfigWinRMListenerPlugin,cloudbaseinit.plugins.windows.winrmcertificateauth.ConfigWinRMCertificateAuthPlugin
+
+         Plugin functions:
+
+         -  **ConfigWinRMListenerPlugin**: sets listening to remote login.
+         -  **ConfigWinRMCertificateAuthPlugin**: sets remote login without the password authentication.
+
+         .. caution::
+
+            The WinRM plug-ins use weak cryptographic algorithm, which may cause security risks. So, you are advised not to load the plug-ins.
 
 .. |image1| image:: /_static/images/en-us_image_0110262607.png
 .. |image2| image:: /_static/images/en-us_image_0110262857.png

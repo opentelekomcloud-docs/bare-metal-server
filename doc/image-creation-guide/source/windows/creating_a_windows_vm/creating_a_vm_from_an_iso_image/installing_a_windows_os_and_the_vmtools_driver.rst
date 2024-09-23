@@ -8,7 +8,7 @@ Installing a Windows OS and the VMTools Driver
 Scenarios
 ---------
 
-This section uses Windows Server 2008 R2 64-bit as an example to describe how to install Windows on an ECS.
+This section uses Windows Server 2019 64-bit as an example to describe how to install Windows on an ECS.
 
 The installation procedure varies depending on the image file you use. Perform operations as prompted.
 
@@ -30,43 +30,31 @@ Procedure
 
 #. Install the Windows OS.
 
-   a. Specify the parameters on the **Install Windows** page.
+   a. Configure Windows setup.
 
 
-      .. figure:: /_static/images/en-us_image_0146478919.png
-         :alt: **Figure 1** Install Windows
+      .. figure:: /_static/images/en-us_image_0000001829389966.png
+         :alt: **Figure 1** Windows setup
 
-         **Figure 1** Install Windows
+         **Figure 1** Windows setup
 
    b. Click **Next**.
 
       The installation confirmation window is displayed.
 
 
-      .. figure:: /_static/images/en-us_image_0146478941.png
+      .. figure:: /_static/images/en-us_image_0000001829550782.png
          :alt: **Figure 2** Installation confirmation window
 
          **Figure 2** Installation confirmation window
 
    c. Click **Install now**.
 
-      The **Select the operating system you want to install** window is displayed.
-
-
-      .. figure:: /_static/images/en-us_image_0146478943.png
-         :alt: **Figure 3** Selecting the OS version
-
-         **Figure 3** Selecting the OS version
+      The **Select the operating system you want to install** dialog box is displayed.
 
    d. Select the version of the OS to be installed and click **Next**.
 
-      The **Please read the license terms** window is displayed.
-
-
-      .. figure:: /_static/images/en-us_image_0146478945.png
-         :alt: **Figure 4** License terms window
-
-         **Figure 4** License terms window
+      The **Please read the license terms** dialog box is displayed.
 
    e. Select **I accept the license terms**, and click **Next**.
 
@@ -74,9 +62,9 @@ Procedure
 
 
       .. figure:: /_static/images/en-us_image_0146478947.png
-         :alt: **Figure 5** Installation type
+         :alt: **Figure 3** Installation type
 
-         **Figure 5** Installation type
+         **Figure 3** Installation type
 
    f. Select **Custom (advanced)**.
 
@@ -85,52 +73,72 @@ Procedure
       -  If the system displays a message indicating that no driver is found, go to :ref:`1.g <en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li2827143133314>`.
 
 
-         .. figure:: /_static/images/en-us_image_0160277563.png
-            :alt: **Figure 6** Installation path
+         .. figure:: /_static/images/en-us_image_0000001860980389.png
+            :alt: **Figure 4** Installation path
 
-            **Figure 6** Installation path
+            **Figure 4** Installation path
 
-      -  If a disk is displayed, go to :ref:`1.j <en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li98272043173314>`.
+      -  If a disk is displayed, go to :ref:`1.i <en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li98272043173314>`.
 
 
          .. figure:: /_static/images/en-us_image_0160277966.png
-            :alt: **Figure 7** Installation path
+            :alt: **Figure 5** Installation path
 
-            **Figure 7** Installation path
+            **Figure 5** Installation path
 
    g. .. _en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li2827143133314:
 
-      Click **Load Driver** and then **Browse**.
+      Click **Load driver** and then **Browse**.
 
 
       .. figure:: /_static/images/en-us_image_0160277608.png
-         :alt: **Figure 8** Loading drivers
+         :alt: **Figure 6** Loading drivers
 
-         **Figure 8** Loading drivers
+         **Figure 6** Loading drivers
 
-   h. Choose the following path and click **OK**.
+   h. Select a driver based on the disk type.
 
-      vmtools-windows/upgrade/$OS_Version/drivers/viostor
-
-   i. Select the driver matching the OS and click **Next**.
-
-      The system may provide multiple drivers. Select **VISOTOR.INF** shown in the following figure.
+      -  If the disk type is VBD, choose **viostor** > **2k19** > **amd64** and click **OK**.
 
 
-      .. figure:: /_static/images/en-us_image_0160277938.png
-         :alt: **Figure 9** Selecting the driver to install
+         .. figure:: /_static/images/en-us_image_0000001979249001.png
+            :alt: **Figure 7** Browsing for a folder
 
-         **Figure 9** Selecting the driver to install
+            **Figure 7** Browsing for a folder
 
-   j. .. _en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li98272043173314:
+         Select the **viostor.inf** driver and click **Next**.
+
+
+         .. figure:: /_static/images/en-us_image_0000001948967564.png
+            :alt: **Figure 8** Selecting the driver to install
+
+            **Figure 8** Selecting the driver to install
+
+      -  If the disk type is SCSI, choose **vioscsi** > **2k19** > **amd64** and click **OK**.
+
+
+         .. figure:: /_static/images/en-us_image_0000001979408863.png
+            :alt: **Figure 9** Browsing for a folder
+
+            **Figure 9** Browsing for a folder
+
+         Select the **vioscsi.inf** driver and click **Next**.
+
+
+         .. figure:: /_static/images/en-us_image_0000001978685553.png
+            :alt: **Figure 10** Selecting the driver to install
+
+            **Figure 10** Selecting the driver to install
+
+   i. .. _en-us_topic_0000001289583000__en-us_topic_0286207843_en-us_topic_0146474784_li98272043173314:
 
       Select the disk and click **Next**.
 
 
       .. figure:: /_static/images/en-us_image_0146478949.png
-         :alt: **Figure 10** Installation path
+         :alt: **Figure 11** Installation path
 
-         **Figure 10** Installation path
+         **Figure 11** Installation path
 
       .. note::
 
@@ -138,11 +146,11 @@ Procedure
 
 
          .. figure:: /_static/images/en-us_image_0160826569.png
-            :alt: **Figure 11** Offline disk
+            :alt: **Figure 12** Offline disk
 
-            **Figure 11** Offline disk
+            **Figure 12** Offline disk
 
-   k. The **Installing Windows** window is displayed, and the OS installation starts.
+   j. The **Installing Windows** window is displayed, and the OS installation starts.
 
       The installation takes about 50 minutes. The ECS restarts during the installation. After the ECS successfully restarts, log in to it again and configure the OS as prompted.
 
@@ -150,52 +158,30 @@ Procedure
 
          You are required to set a password for the OS user.
 
-         Supported special characters include ``!@$%^-_=+[{}]:,./?``
+         Supported special characters include\ ``!@$%^-_=+[{}]:,./?``
 
 
       .. figure:: /_static/images/en-us_image_0146478951.png
-         :alt: **Figure 12** Installation progress
+         :alt: **Figure 13** Installation progress
 
-         **Figure 12** Installation progress
+         **Figure 13** Installation progress
 
-#. Install related drivers.
+#. Install drivers.
 
-   a. Open **Computer** and double-click the CD driver.
-
-
-      .. figure:: /_static/images/en-us_image_0160277992.png
-         :alt: **Figure 13** Starting the CD driver
-
-         **Figure 13** Starting the CD driver
-
-   b. Double-click the **vmtools-windows** folder.
+   a. Open **Computer** and double-click the CD drive.
 
 
-      .. figure:: /_static/images/en-us_image_0160277998.png
-         :alt: **Figure 14** Opening the **vmtools-windows** folder
+      .. figure:: /_static/images/en-us_image_0000001860906473.png
+         :alt: **Figure 14** Starting the CD drive
 
-         **Figure 14** Opening the **vmtools-windows** folder
+         **Figure 14** Starting the CD drive
 
-   c. Double-click the **Setup** file.
+   b. Double-click **virtio-win-gt-x64** or **virtio-win-gt-x86**. Install drivers as prompted.
 
-
-      .. figure:: /_static/images/en-us_image_0160278257.png
-         :alt: **Figure 15** Executing the Setup file
-
-         **Figure 15** Executing the Setup file
-
-   d. Install drivers as prompted.
-
-
-      .. figure:: /_static/images/en-us_image_0160278288.png
-         :alt: **Figure 16** Installing UVP VMTools for Windows
-
-         **Figure 16** Installing UVP VMTools for Windows
-
-   e. After the driver is installed, start **Device Manager** and verify that the drivers shown in the red box in the following figure are successfully installed.
+   c. After the installation is complete, start **Device Manager** and check that all the drivers shown in the red box are successfully installed.
 
 
       .. figure:: /_static/images/en-us_image_0160278272.png
-         :alt: **Figure 17** Device Manager
+         :alt: **Figure 15** Device Manager
 
-         **Figure 17** Device Manager
+         **Figure 15** Device Manager

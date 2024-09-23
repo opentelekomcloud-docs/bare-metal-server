@@ -2,12 +2,12 @@
 
 .. _en-us_topic_0000001163456407:
 
-Upgrading the Ascend 910 NPU Driver
-===================================
+Upgrading the Ascend NPU Driver
+===============================
 
 **Scenarios**
 
-You can upgrade the driver of the Ascend 910 NPU for Atlas 800 (model 9000) training servers.
+You can upgrade the driver of Ascend NPUs for Atlas 800 (model 9000) training servers.
 
 This section uses the **A800-9000-npu-driver\_**\ *x.x.x*\ **\_euleros2.8-aarch64.run** package as an example to describe how to upgrade the NPU driver.
 

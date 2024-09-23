@@ -37,7 +37,7 @@ Prerequisites
 
 -  You have logged in to the VM.
 -  Cloud-Init has been installed on the VM.
--  The bms-network-config software package has been downloaded as instructed in :ref:`Software <en-us_topic_0081116771>` and has been uploaded to the VM.
+-  You have downloaded the bms-network-config software package by referring to :ref:`Software <en-us_topic_0081116771>`.
 
    .. note::
 
