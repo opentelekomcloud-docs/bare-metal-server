@@ -31,15 +31,15 @@ Perform a check according to :ref:`Table 1 <en-us_topic_0000001117096650__en-us_
 
 .. table:: **Table 2** Compatible software versions
 
-   ==================== =======================
-   NPU                  Driver/Firmware Version
-   ==================== =======================
-   Ascend 910 A         20.0.0, 20.1.0, 20.2.0
-   Ascend 910 B         20.0.0, 20.1.0, 20.2.0
-   Ascend 910 Pro A     20.0.0, 20.1.0, 20.2.0
-   Ascend 910 Pro B     20.2.0.SPC300
-   Ascend 910 Premium A 20.2.0.SPC300
-   ==================== =======================
+   ================ =======================
+   NPU              Driver/Firmware Version
+   ================ =======================
+   Ascend A         20.0.0, 20.1.0, 20.2.0
+   Ascend B         20.0.0, 20.1.0, 20.2.0
+   Ascend Pro A     20.0.0, 20.1.0, 20.2.0
+   Ascend Pro B     20.2.0.SPC300
+   Ascend Premium A 20.2.0.SPC300
+   ================ =======================
 
 **Obtaining Upgrade Packages**
 

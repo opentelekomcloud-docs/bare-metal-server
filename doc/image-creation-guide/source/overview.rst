@@ -49,7 +49,7 @@ The image creation process is as follows:
    |                                         | -  (Optional) Install multipath software.                                                                                                        |
    |                                         | -  Perform security configuration.                                                                                                               |
    |                                         | -  Configure remote login.                                                                                                                       |
-   |                                         | -  Configuring automatic root partition expansion                                                                                                |
+   |                                         | -  Configure automatic root partition expansion.                                                                                                 |
    |                                         |                                                                                                                                                  |
    |                                         | Windows:                                                                                                                                         |
    |                                         |                                                                                                                                                  |

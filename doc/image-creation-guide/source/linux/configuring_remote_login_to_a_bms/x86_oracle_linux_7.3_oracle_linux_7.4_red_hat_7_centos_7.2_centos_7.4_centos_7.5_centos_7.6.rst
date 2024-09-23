@@ -82,4 +82,4 @@ x86: Oracle Linux 7.3/Oracle Linux 7.4/Red Hat 7/CentOS 7.2/CentOS 7.4/CentOS 7.
 .. |image1| image:: /_static/images/en-us_image_0000001092444428.jpg
 .. |image2| image:: /_static/images/en-us_image_0000001092604360.jpg
 .. |image3| image:: /_static/images/en-us_image_0000001139666565.jpg
-.. |image4| image:: /_static/images/en-us_image_0000001139583739.gif
+.. |image4| image:: /_static/images/en-us_image_0000001832960181.png

@@ -81,7 +81,7 @@ The following describes how to install Cloud-Init on VMs running SUSE, CentOS, D
       +---------+----------+--------------------------------------------------------------------------+
       |         | 6 64-bit | https://archives.fedoraproject.org/pub/archive/epel/6/x86_64/Packages/e/ |
       +---------+----------+--------------------------------------------------------------------------+
-      |         | 7 64-bit | https://archives.fedoraproject.org/pub/epel/7/x86_64/Packages/e/         |
+      |         | 7 64-bit | https://archives.fedoraproject.org/pub/archive/epel/7/x86_64/Packages/e/ |
       +---------+----------+--------------------------------------------------------------------------+
 
    Run the following commands to install Cloud-Init on a VM running CentOS 6.5 64-bit (example):

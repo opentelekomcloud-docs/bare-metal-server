@@ -11,6 +11,8 @@ FAQ
 -  :ref:`What Do I Do If Cloudbase-Init Is Stopped on a Provisioned Windows BMS? <en-us_topic_0100601386>`
 -  :ref:`What Can I Do If Data Cannot Be Injected into BMSs Due to cloud-init-local Failures? <en-us_topic_0081250916>`
 -  :ref:`How Do I Activate a Windows BMS? <en-us_topic_0093469086>`
+-  :ref:`How Do I Verify Software Package Integrity? <en-us_topic_0000001696535081>`
+-  :ref:`How Do I Check Whether a Physical Server Is Running Properly? <en-us_topic_0000002024654874>`
 
 .. toctree::
    :maxdepth: 1
@@ -22,3 +24,5 @@ FAQ
    what_do_i_do_if_cloudbase-init_is_stopped_on_a_provisioned_windows_bms
    what_can_i_do_if_data_cannot_be_injected_into_bmss_due_to_cloud-init-local_failures
    how_do_i_activate_a_windows_bms
+   how_do_i_verify_software_package_integrity
+   how_do_i_check_whether_a_physical_server_is_running_properly

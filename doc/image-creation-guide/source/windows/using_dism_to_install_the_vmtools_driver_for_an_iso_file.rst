@@ -8,7 +8,7 @@ Using Dism++ to Install the VMTools Driver for an ISO File
 Scenario
 --------
 
-A Windows system with the Integrated Drive Electronics (IDE) hard drive and Virtio NIC is used on the cloud. Therefore, you need to integrate the VMTools driver into the ISO file of Windows before registering an image on the cloud platform. Typically, an ISO file contains all the files that would be included on an optical disc. Some software can be installed only from a CD-ROM drive. So, a virtual CD-ROM drive is required.
+Windows uses IDE disks and VirtIO NICs. Before registering an image on the cloud platform, integrate VirtIO drivers into the Windows ISO file. Typically, an ISO file contains all the files that would be included on an optical disc. Some software can be installed only from a CD-ROM drive. So, a virtual CD-ROM drive is required.
 
 This section describes how to install the VMTools driver for an ISO file using Dism++.
 

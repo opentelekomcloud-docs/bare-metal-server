@@ -25,7 +25,7 @@ Linux
 -  :ref:`Performing Security Configuration <en-us_topic_0081116691>`
 -  :ref:`Configuring Remote Login to a BMS <en-us_topic_0081116594>`
 -  :ref:`Configuring the Root Partition to Be Automatically Extended <en-us_topic_0108604183>`
--  :ref:`Installing and Upgrading Drivers and Firmware for Ascend 910 BMSs <en-us_topic_0000001117256546>`
+-  :ref:`Installing and Upgrading Drivers and Firmware for Ascend BMSs <en-us_topic_0000001117256546>`
 -  :ref:`Deleting Files <en-us_topic_0081116800>`
 
 .. toctree::
@@ -52,5 +52,5 @@ Linux
    performing_security_configuration/index
    configuring_remote_login_to_a_bms/index
    configuring_the_root_partition_to_be_automatically_extended/index
-   installing_and_upgrading_drivers_and_firmware_for_ascend_910_bmss/index
+   installing_and_upgrading_drivers_and_firmware_for_ascend_bmss/index
    deleting_files
