@@ -12,7 +12,7 @@ You can stop BMSs in **Running** state.
 
 .. note::
 
-   -  If you choose to forcibly stop a BMS, services running on the BMS will be stopped. Before performing this operation, ensure that you have saved files on the BMS.
+   -  Stopping a BMS will forcibly interrupt services running on it. Before performing this operation, ensure that you have saved files on the BMS.
    -  You can stop a BMS only on the management console and cannot run **shutdown** to stop it. It is because that the **shutdown** and other commands attempting to stop a BMS will be regarded as unexpected operations and will not take effect.
 
 Procedure
