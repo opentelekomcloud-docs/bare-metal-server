@@ -9,7 +9,7 @@ Enhanced High-Speed Network
 ---------------------------
 
 
-.. figure:: /_static/images/en-us_image_0170795736.png
+.. figure:: /_static/images/en-us_image_0000002083707121.png
    :alt: **Figure 1** Enhanced high-speed network architecture
 
    **Figure 1** Enhanced high-speed network architecture
