@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'bms-umn.tex',
-     u'Bare Metal Server - User Guide',
+    u'Bare Metal Server - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 

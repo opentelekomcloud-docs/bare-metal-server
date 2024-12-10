@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'bms-image-creation-guide.tex',
-     u'Bare Metal Server - Private Image Creation Guide',
+    u'Bare Metal Server - Private Image Creation Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 
