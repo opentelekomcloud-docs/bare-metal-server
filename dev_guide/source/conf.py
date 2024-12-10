@@ -109,8 +109,7 @@ html_copy_source = False
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
     ('index',
-     'bms-dev-guide.tex',
-     u'Bare Metal Server - Developer Guide',
+     'bms-dev-guide.tex',u'Bare Metal Server - Developer Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 

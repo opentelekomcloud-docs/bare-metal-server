@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'bms-api-ref.tex',
-     u'Bare Metal Server - API Reference',
+    u'Bare Metal Server - API Reference',
      u'OpenTelekomCloud', 'manual'),
 ]
 
