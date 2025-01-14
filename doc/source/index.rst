@@ -8,6 +8,7 @@ A Bare Metal Server (BMS) is a physical server dedicated to individual tenants. 
    :class: container-sbv
 
    .. service_card::
+      :environment: internal
       :service_type: bms
       :umn: This document describes basic concepts, functions, key terms, and FAQs of BMSs and provides instructions for applying for and using BMSs.
       :api-ref: This document describes application programming interfaces (APIs) of Bare Metal Server (BMS) and provides API parameters and example values.
