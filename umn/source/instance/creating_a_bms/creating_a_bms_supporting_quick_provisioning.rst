@@ -26,6 +26,6 @@ You can create a BMS supporting quick provisioning by following the instructions
 
 When creating the BMS, pay attention to the following:
 
--  **Flavor**: Select **physical.h2.large**. For more information about flavors, see :ref:`Instance Family <en-us_topic_0083745258>`.
+-  **Flavor**: Select **physical.i7n.28xlarge.4**. For more information about flavors, see :ref:`Instance Family <en-us_topic_0083745258>`.
 -  **Image**: Not all public images can be used to create BMSs supporting quick provisioning.
 -  **Disk**: Set the system disk type and size.
