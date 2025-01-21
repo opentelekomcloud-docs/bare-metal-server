@@ -8,7 +8,7 @@ Step 1: Create a BMS
 Scenarios
 ---------
 
-This section helps you quickly create a BMS that will be used as a web server. For details about all the parameters used for creating a BMS, see :ref:`Region and AZ <en-us_topic_0083745259>`. To create a BMS by calling an API, see "Creating a BMS (Native OpenStack API)" in *Bare Metal Server API Reference*.
+This section helps you quickly create a BMS that will be used as a web server. For details about all the parameters used for creating a BMS, see :ref:`Creating a Common BMS <en-us_topic_0053536933>`. To create a BMS by calling an API, see "Creating a BMS (Native OpenStack API)" in *Bare Metal Server API Reference*.
 
 Procedure
 ---------
@@ -26,7 +26,7 @@ Procedure
 
    -  Set **Flavor**.
 
-      Available :ref:`flavors <en-us_topic_0083745258>` vary depending on the region and AZ you select. Web servers are mainly used for web page access and do not require strong computing capabilities. In addition, only a small amount of storage is required for recording logs. Therefore, select **physical.h2.large**.
+      Available :ref:`flavors <en-us_topic_0083745258>` vary depending on the region and AZ you select. Web servers are mainly used for web page access and do not require strong computing capabilities. In addition, only a small amount of storage is required for recording logs. Therefore, select **physical.i7n.28xlarge.4**.
 
    -  Set **Image**.
 
