@@ -38,6 +38,7 @@ otcdocs_doc_type = 'umn'
 otcdocs_service_category = 'compute'
 otcdocs_service_title = 'Bare Metal Server'
 otcdocs_service_type = 'bms'
+otcdocs_service_environment = 'public'
 otcdocs_cloud_environment = 'eu_de'
 otcdocs_search_environment = 'hc_de'
 otcdocs_search_index = 'search_index_de'
@@ -113,7 +114,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'bms-umn.tex',
-     u'Bare Metal Server - User Guide',
+    u'Bare Metal Server - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 
