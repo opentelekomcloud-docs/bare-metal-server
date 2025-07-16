@@ -21,78 +21,78 @@ GET /v1/{project_id}/baremetalservers/{server_id}/os-volume_attachments
 
 .. table:: **Table 1** Parameter description
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Mandatory             | Description                                                                                                                            |
-   +=======================+=======================+========================================================================================================================================+
-   | project_id            | Yes                   | Specifies the project ID.                                                                                                              |
-   |                       |                       |                                                                                                                                        |
-   |                       |                       | For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <en-us_topic_0171277624>`.                            |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-   | server_id             | Yes                   | Specifies the BMS ID.                                                                                                                  |
-   |                       |                       |                                                                                                                                        |
-   |                       |                       | You can obtain the BMS ID from the BMS console or by calling the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>`. |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                               |
+   +=======================+=======================+===========================================================================================================================+
+   | project_id            | Yes                   | Specifies the project ID.                                                                                                 |
+   |                       |                       |                                                                                                                           |
+   |                       |                       | For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <en-us_topic_0171277624>`.               |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | server_id             | Yes                   | Specifies the BMS ID.                                                                                                     |
+   |                       |                       |                                                                                                                           |
+   |                       |                       | You can obtain the BMS ID from the BMS console or by calling the API :ref:`Querying BMSs <en-us_topic_0000002340063012>`. |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
 
-Request
--------
+Request Parameters
+------------------
 
--  Request parameters
+None
 
-   None
+Example Request
+---------------
 
--  Example request
+Querying EVS disks attached to a BMS (ID: 4d8c3732-a248-40ed-bebc-539a6ffd25c0)
 
-   .. code-block:: text
+.. code-block:: text
 
-      GET https://{BMS Endpoint}/v1/bbf1946d374b44a0a2a95533562ba954/baremetalservers/4d8c3732-a248-40ed-bebc-539a6ffd25c0/os-volume_attachments
+   GET https://{BMS Endpoint}/v1/bbf1946d374b44a0a2a95533562ba954/baremetalservers/4d8c3732-a248-40ed-bebc-539a6ffd25c0/os-volume_attachments
 
-Response
---------
+Response Parameters
+-------------------
 
--  Response parameters
++-------------------+------------------+------------------------------------------------------------------------------------------------------------+
+| Parameter         | Type             | Description                                                                                                |
++===================+==================+============================================================================================================+
+| volumeAttachments | Array of objects | Specifies disks attached to a BMS. For details, see :ref:`Table 2 <en-us_topic_0130145446__table7886611>`. |
++-------------------+------------------+------------------------------------------------------------------------------------------------------------+
 
-   +-------------------+------------------+------------------------------------------------------------------------------------------------------------+
-   | Parameter         | Type             | Description                                                                                                |
-   +===================+==================+============================================================================================================+
-   | volumeAttachments | Array of objects | Specifies disks attached to a BMS. For details, see :ref:`Table 2 <en-us_topic_0130145446__table7886611>`. |
-   +-------------------+------------------+------------------------------------------------------------------------------------------------------------+
+.. _en-us_topic_0130145446__table7886611:
 
-   .. _en-us_topic_0130145446__table7886611:
+.. table:: **Table 2** **volumeAttachments** data structure
 
-   .. table:: **Table 2** **volumeAttachments** field data structure description
+   +-----------+--------+----------------------------------------------------------+
+   | Parameter | Type   | Description                                              |
+   +===========+========+==========================================================+
+   | device    | String | Specifies the mount directory, for example, **dev/sdd**. |
+   +-----------+--------+----------------------------------------------------------+
+   | id        | String | Specifies the ID of the attached resource.               |
+   +-----------+--------+----------------------------------------------------------+
+   | serverId  | String | Specifies the ID of the BMS that disks are attached to.  |
+   +-----------+--------+----------------------------------------------------------+
+   | volumeId  | String | Specifies the ID of the disk attached to the BMS.        |
+   +-----------+--------+----------------------------------------------------------+
 
-      +-----------+--------+------------------------------------------------------------+
-      | Parameter | Type   | Description                                                |
-      +===========+========+============================================================+
-      | device    | String | Specifies the mount directory, for example, **dev/sdd**.   |
-      +-----------+--------+------------------------------------------------------------+
-      | id        | String | Specifies the ID of the attached resource.                 |
-      +-----------+--------+------------------------------------------------------------+
-      | serverId  | String | Specifies the ID of the BMS to which the disk is attached. |
-      +-----------+--------+------------------------------------------------------------+
-      | volumeId  | String | Specifies the ID of the disk attached to the BMS.          |
-      +-----------+--------+------------------------------------------------------------+
+Example Response
+----------------
 
--  Example response
+::
 
-   ::
-
-      {
-          "volumeAttachments": [
-              {
-                  "device": "/dev/sdd",
-                  "id": "a26887c6-c47b-4654-abb5-dfadf7d3f803",
-                  "serverId": "4d8c3732-a248-40ed-bebc-539a6ffd25c0",
-                  "volumeId": "a26887c6-c47b-4654-abb5-dfadf7d3f803"
-              },
-              {
-                  "device": "/dev/sdc",
-                  "id": "a26887c6-c47b-4654-abb5-dfadf7d3f804",
-                  "serverId": "4d8c3732-a248-40ed-bebc-539a6ffd25c0",
-                  "volumeId": "a26887c6-c47b-4654-abb5-dfadf7d3f804"
-              }
-          ]
-      }
+   {
+       "volumeAttachments": [
+           {
+               "device": "/dev/sdd",
+               "id": "a26887c6-c47b-4654-abb5-dfadf7d3f803",
+               "serverId": "4d8c3732-a248-40ed-bebc-539a6ffd25c0",
+               "volumeId": "a26887c6-c47b-4654-abb5-dfadf7d3f803"
+           },
+           {
+               "device": "/dev/sdc",
+               "id": "a26887c6-c47b-4654-abb5-dfadf7d3f804",
+               "serverId": "4d8c3732-a248-40ed-bebc-539a6ffd25c0",
+               "volumeId": "a26887c6-c47b-4654-abb5-dfadf7d3f804"
+           }
+       ]
+   }
 
 Returned Values
 ---------------
