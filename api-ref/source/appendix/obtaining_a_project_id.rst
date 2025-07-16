@@ -20,7 +20,7 @@ Obtain the Project ID by Calling an API
 
 You can obtain the project ID by calling the IAM API used to query project information based on the specified criteria.
 
-The API used to obtain a project ID is GET https://{Endpoint}/v3/projects. {Endpoint} is the IAM endpoint and can be obtained from `Regions and Endpoints <https://docs.otc.t-systems.com/additional/endpoints.html>`__.
+The API used to obtain a project ID is GET https://{Endpoint}/v3/projects. {Endpoint} is the IAM endpoint and can be obtained from `Regions and Endpoints <https://docs.otc.t-systems.com/regions-and-endpoints/index.html>`__.
 
 The following is an example response. The value of **id** is the project ID.
 
@@ -29,17 +29,17 @@ The following is an example response. The value of **id** is the project ID.
    {
        "projects": [
            {
-               "domain_id": "65382450e8f64ac0870cd180d14e684b",
+               "domain_id": "65ewtrgaggshhk1223245sghjlse684b",
                "is_domain": false,
-               "parent_id": "65382450e8f64ac0870cd180d14e684b",
+               "parent_id": "65ewtrgaggshhk1223245sghjlse684b",
                "name": "project_name",
                "description": "",
                "links": {
                    "next": null,
                    "previous": null,
-                   "self": "https://www.example.com/v3/projects/a4a5d4098fb4474fa22cd05f897d6b99"
+                   "self": "https://www.example.com/v3/projects/a4adasfjljaaaakla12334jklga9sasfg"
                },
-               "id": "a4a5d4098fb4474fa22cd05f897d6b99",
+               "id": "a4adasfjljaaaakla12334jklga9sasfg",
                "enabled": true
            }
        ],

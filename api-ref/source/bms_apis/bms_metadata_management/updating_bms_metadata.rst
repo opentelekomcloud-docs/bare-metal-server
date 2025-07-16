@@ -30,20 +30,20 @@ POST /v1/{project_id}/baremetalservers/{server_id}/metadata
 
 .. table:: **Table 1** Parameter description
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Mandatory             | Description                                                                                                                            |
-   +=======================+=======================+========================================================================================================================================+
-   | project_id            | Yes                   | Specifies the project ID.                                                                                                              |
-   |                       |                       |                                                                                                                                        |
-   |                       |                       | For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <en-us_topic_0171277624>`.                            |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-   | server_id             | Yes                   | Specifies the BMS ID.                                                                                                                  |
-   |                       |                       |                                                                                                                                        |
-   |                       |                       | You can obtain the BMS ID from the BMS console or by calling the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>`. |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                               |
+   +=======================+=======================+===========================================================================================================================+
+   | project_id            | Yes                   | Specifies the project ID.                                                                                                 |
+   |                       |                       |                                                                                                                           |
+   |                       |                       | For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <en-us_topic_0171277624>`.               |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | server_id             | Yes                   | Specifies the BMS ID.                                                                                                     |
+   |                       |                       |                                                                                                                           |
+   |                       |                       | You can obtain the BMS ID from the BMS console or by calling the API :ref:`Querying BMSs <en-us_topic_0000002340063012>`. |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+
 
-Request
--------
+Request Parameters
+------------------
 
 .. table:: **Table 2** Request parameters
 
@@ -63,22 +63,25 @@ Request
    |                 |                 |                 | It contains a maximum of 255 Unicode characters.                                                                                                                       |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
--  Example request
+Example Request
+---------------
 
-   .. code-block:: text
+Updating the metadata of a BMS (ID: cf2a8b97-b5c6-47ef-9714-eb27adf26e5b) to customize a key-value pair
 
-      POST https://{BMS Endpoint}/v1/bbf1946d374b44a0a2a95533562ba954/baremetalservers/cf2a8b97-b5c6-47ef-9714-eb27adf26e5b/metadata
+.. code-block:: text
 
-   ::
+   POST https://{BMS Endpoint}/v1/bbf1946d374b44a0a2a95533562ba954/baremetalservers/cf2a8b97-b5c6-47ef-9714-eb27adf26e5b/metadata
 
-      {
-          "metadata": {
-              "key": "value"
-          }
-      }
+::
 
-Response
---------
+   {
+       "metadata": {
+           "key": "value"
+       }
+   }
+
+Response Parameters
+-------------------
 
 .. table:: **Table 3** Parameter description
 
@@ -98,15 +101,16 @@ Response
    |                 |                 |                 | It contains a maximum of 255 Unicode characters.                                                                                                                       |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
--  Example response
+Example Response
+----------------
 
-   ::
+::
 
-      {
-          "metadata":{
-              "key": "value"
-          }
-      }
+   {
+       "metadata":{
+           "key": "value"
+       }
+   }
 
 Returned Values
 ---------------

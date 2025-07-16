@@ -7,7 +7,7 @@ BMS Lifecycle Management
 
 -  :ref:`Creating BMSs <en-us_topic_0106040941>`
 -  :ref:`Deleting BMSs <en-us_topic_0191726734>`
--  :ref:`Querying BMS Details <en-us_topic_0113746489>`
+-  :ref:`Querying Details About a BMS <en-us_topic_0113746489>`
 -  :ref:`Querying Details About BMSs <en-us_topic_0129082263>`
 
 .. toctree::
@@ -16,5 +16,5 @@ BMS Lifecycle Management
 
    creating_bmss
    deleting_bmss
-   querying_bms_details
+   querying_details_about_a_bms
    querying_details_about_bmss
