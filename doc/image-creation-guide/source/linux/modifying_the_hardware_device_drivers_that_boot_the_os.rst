@@ -29,7 +29,7 @@ Procedure
          ...
          ...
          # additional kernel modules to the default
-         add_drivers+="ahci megaraid_sas mpt3sas mpt2sas virtio_blk virtio_scsi virtio_net"
+         add_drivers+=" ahci megaraid_sas mpt3sas mpt2sas virtio_blk virtio_scsi virtio_net "
 
       .. note::
 
@@ -88,7 +88,7 @@ Procedure
 
          ...
          #
-         INITRD_MODULES="ahci megaraid_sas mpt3sas mpt2sas virtio_blk virtio_scsi virtio_net"
+         INITRD_MODULES=" ahci megaraid_sas mpt3sas mpt2sas virtio_blk virtio_scsi virtio_net "
          ## Type:   string(yes)
          ...
 

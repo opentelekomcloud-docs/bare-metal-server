@@ -86,3 +86,8 @@ The command is as follows:
 For example, to make the **test** user expire on December 31, 2019, run the following command:
 
 **chage -E 2019-12-31 test**
+
+Installing the Network Script
+-----------------------------
+
+See :ref:`Installing bms-network-config <en-us_topic_0081116559>`.

@@ -108,7 +108,7 @@ Windows Server 2012 R2/Windows Server 2016
 
          .. caution::
 
-            The WinRM plug-ins use weak cryptographic algorithm, which may cause security risks. So, you are advised not to load the plug-ins.
+            The WinRM plug-ins use weak cryptographic algorithms, which may cause security risks. So, you are not advised to load the plug-ins.
 
 .. |image1| image:: /_static/images/en-us_image_0110262607.png
 .. |image2| image:: /_static/images/en-us_image_0110262857.png

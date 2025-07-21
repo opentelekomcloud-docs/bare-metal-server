@@ -27,7 +27,7 @@ This section uses Oracle Linux 6.8 as an example to describe how to create a Lin
    .. note::
 
       -  The image cannot be too large. For Oracle Linux 7.3/Red Hat 7.3 Linux, you are advised to set the image size to a value no greater than 6 GB. For Ubuntu 16.04 ARM, you are advised to select **Select managed or other existing storage** and then select a 150 GB QCOW2 image.
-      -  The total size of the disk image and memory (150 MB) cannot exceed the memory size of the BMS to be created. Otherwise, the BMS will fail to be created.
+      -  The total size of the disk image and reserved memory (150 MB) cannot exceed the memory size of the BMS to be created. Otherwise, the BMS will fail to be created.
 
    |image2|
 

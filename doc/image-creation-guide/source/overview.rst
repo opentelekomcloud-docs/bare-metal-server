@@ -15,12 +15,12 @@ Image Creation Process
 The image creation process is as follows:
 
 
-.. figure:: /_static/images/en-us_image_0164137586.png
+.. figure:: /_static/images/en-us_image_0000002160243888.png
    :alt: **Figure 1** Process of image creation
 
    **Figure 1** Process of image creation
 
-.. table:: **Table 1** Creation process description
+.. table:: **Table 1** Process of image creation
 
    +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | Procedure                               | Description                                                                                                                                      |

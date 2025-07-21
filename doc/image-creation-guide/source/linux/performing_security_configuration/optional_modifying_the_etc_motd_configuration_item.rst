@@ -8,7 +8,7 @@
 Scenario
 --------
 
-You can modify the **motd** configuration item to remind users of changing passwords at their first login to BMSs to improve security.
+To improve security, you can modify the **motd** configuration item to remind users to change passwords at their first login to a BMS.
 
 Procedure
 ---------

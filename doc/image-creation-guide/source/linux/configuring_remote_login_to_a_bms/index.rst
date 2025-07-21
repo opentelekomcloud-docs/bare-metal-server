@@ -5,7 +5,7 @@
 Configuring Remote Login to a BMS
 =================================
 
-To enable BMS remote login, configure the OS to ensure that it can be displayed on the serial port. This section provides guidance for administrators on how to configure the serial port during image creation to enable users to log in to the BMS remotely. The configuration method varies depending on the OS.
+To enable BMS remote login, configure the OS to ensure that it can be displayed on the serial port. This section provides guidance for administrators on how to configure the serial port during image creation to enable users to log in to a BMS remotely. The configuration method varies depending on the OS.
 
 -  :ref:`x86: Oracle Linux 7.3/Oracle Linux 7.4/Red Hat 7/CentOS 7.2/CentOS 7.4/CentOS 7.5/CentOS 7.6 <en-us_topic_0081116835>`
 -  :ref:`x86: Oracle Linux 6 series/Red Hat 6 series/CentOS 6 <en-us_topic_0081116693>`

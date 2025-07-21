@@ -10,7 +10,7 @@ Performing Security Configuration
 -  :ref:`(Optional) Modifying the /etc/motd Configuration Item <en-us_topic_0000001194043086>`
 -  :ref:`Modifying Historical Record Configuration Items <en-us_topic_0000001239043027>`
 -  :ref:`Optimizing the udev Configuration <en-us_topic_0000001193883124>`
--  :ref:`Optimizing SELinux <en-us_topic_0000001238962999>`
+-  :ref:`Optimizing udev and SELinux <en-us_topic_0000001238962999>`
 -  :ref:`Uninstalling denyhosts <en-us_topic_0000001194203066>`
 -  :ref:`(Optional) Setting Automatic Hostname Update <en-us_topic_0000001194363056>`
 -  :ref:`(Optional) Installing Common O&M Tools <en-us_topic_0000001238843011>`
@@ -25,7 +25,7 @@ Performing Security Configuration
    optional_modifying_the_etc_motd_configuration_item
    modifying_historical_record_configuration_items
    optimizing_the_udev_configuration
-   optimizing_selinux
+   optimizing_udev_and_selinux
    uninstalling_denyhosts
    optional_setting_automatic_hostname_update
    optional_installing_common_o_and_m_tools

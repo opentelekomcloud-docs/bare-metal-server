@@ -11,7 +11,7 @@ Setting the Maximum Number of Handles to 65535.
 
 1024
 
--  For BMSs, you need to change the value to **65535**.
+-  For a BMS, you need to change the value to **65535**.
 
 Run the **vim** command to edit the **/etc/systemd/system.conf** file as follows:
 

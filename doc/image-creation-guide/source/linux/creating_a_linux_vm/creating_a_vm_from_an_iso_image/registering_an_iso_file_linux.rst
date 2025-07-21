@@ -13,7 +13,6 @@ This section describes how to register an external ISO file as a private image (
 Constraints
 -----------
 
--  To create a Kunpeng server image, set **Architecture** to **ARM** and ensure that Kunpeng ECSs can be created in the current region.
 -  To create an x86 server image that supports V6 CPUs, set **Boot Mode** to **UEFI**.
 
 Prerequisite

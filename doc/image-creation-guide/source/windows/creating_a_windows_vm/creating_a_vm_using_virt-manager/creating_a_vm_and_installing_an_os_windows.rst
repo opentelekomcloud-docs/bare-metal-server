@@ -53,7 +53,7 @@ This section uses Windows Server 2012 R2 as an example to describe how to create
 
 #. Install Windows on the VM.
 
-   Configure the language, time zone, currency, and other settings by referring to :ref:`Installing a Windows OS and the VMTools Driver <en-us_topic_0000001289583000>`. Activate the OS using the Windows Server 2012 R2 product key.
+   Configure the language, time zone, currency, and other settings by referring to :ref:`Installing a Windows OS and the VirtIO Driver <en-us_topic_0000001289583000>`. Activate the OS using the Windows Server 2012 R2 product key.
 
 .. |image1| image:: /_static/images/en-us_image_0110260257.png
 .. |image2| image:: /_static/images/en-us_image_0110260335.png

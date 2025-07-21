@@ -5,7 +5,7 @@
 Modifying the Boot File (UEFI Boot Mode)
 ========================================
 
-In the UEFI boot mode, you must modify the boot file. Otherwise, BMSs provisioned using the VM image may fail to start after they are forcibly restarted.
+In the UEFI boot mode, you must modify the boot file. Otherwise, BMSs provisioned using the VM image may fail a forcible restart.
 
 After the OS is installed, do not restart the VM immediately. Press **Ctrl + Alt + F2** to enter the CLI and perform the operations in this section to modify the boot file.
 

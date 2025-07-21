@@ -5,7 +5,7 @@
 (Optional) Installing the SDI Driver
 ====================================
 
-With the SDI driver, EVS disks can be attached to BMSs. The EVS disks can be used as system disks from which the BMSs are booted. This facilitates quick BMS provisioning. If you do not need to use EVS disks or your BMS does not have SD1 cards, skip this section.
+With the SDI driver, EVS disks can be attached to BMSs. The EVS disks can be used as system disks from which the servers are booted. This enables quick BMS provisioning. If you do not need to use EVS disks or your BMS does not have SD1 cards, skip this section.
 
 Prerequisites
 -------------
@@ -29,13 +29,13 @@ Procedure
 
    |image1|
 
-#. Find the EpScsiAdpt installation file and view the PCI ID.
+#. Find the EpScsiAdapter installation file and view the PCI ID.
 
    |image2|
 
 #. Open the CLI, go to the directory where the SDI driver and device management tool are located, and run the following command:
 
-   **devcon install EpScsiAdpt.inf** "*PCI\\VEN_19E5&DEV_1610&SUBSYS_000119E5*"
+   **devcon install EpScsiAdapter.inf** "*PCI\\VEN_19E5&DEV_1610&SUBSYS_000119E5*"
 
    |image3|
 
@@ -61,9 +61,9 @@ Procedure
 
    d. Check whether the exceptions in the storage controller are cleared.
 
-.. |image1| image:: /_static/images/en-us_image_0110264994.png
+.. |image1| image:: /_static/images/en-us_image_0000002029831741.png
 .. |image2| image:: /_static/images/en-us_image_0110264996.png
-.. |image3| image:: /_static/images/en-us_image_0110265018.png
+.. |image3| image:: /_static/images/en-us_image_0000002029911905.png
 .. |image4| image:: /_static/images/en-us_image_0110265029.png
 .. |image5| image:: /_static/images/en-us_image_0110265037.png
 .. |image6| image:: /_static/images/en-us_image_0110266962.png

@@ -8,7 +8,7 @@
 Scenario
 --------
 
-A centralized BMS uses NetworkManager for network management. This tool needs to be disabled because it may conflict with the **network-config** configuration. For a distributed BMS, skip this section.
+A centralized BMS uses NetworkManager for network management. This tool needs to be disabled because it may conflict with **network-config**. For a distributed BMS, skip this section.
 
 .. note::
 

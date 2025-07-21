@@ -13,13 +13,5 @@ After installing bms-network-config for an image of a centralized BMS, you need 
 Procedure
 ---------
 
-#. Run **chmod 700 -R /opt/huawei/** to change the permission.
-
-#. Run **ls -l /opt/huawei/** and **ls -l /opt/huawei/\*** to check the permission.
-
-   |image1|
-
-   |image2|
-
-.. |image1| image:: /_static/images/en-us_image_0286528662.png
-.. |image2| image:: /_static/images/en-us_image_0286528663.png
+#. Run **chmod 700 -R /opt/otc/** to modify the permission.
+#. Run **ls -l /opt/otc/** and **ls -l /opt/otc/\*** to check the permission.
