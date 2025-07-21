@@ -5,7 +5,7 @@
 How Do I Set the BMS CPU Frequency Governor?
 ============================================
 
-Generally, CPU frequency governors include **performance**, **powersave**, and **ondemand**. You can select a one based on service requirements.
+Generally, CPU frequency governors include **performance**, **powersave**, and **ondemand**. You can select one based on your service requirements.
 
 Assume that you want to set the CPU frequency governor to **performance**.
 

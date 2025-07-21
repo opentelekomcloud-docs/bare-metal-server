@@ -9,7 +9,7 @@ x86: Oracle Linux 7.3/Oracle Linux 7.4/Red Hat 7/CentOS 7.2/CentOS 7.4/CentOS 7.
 
    This section uses the configuration files of CentOS 7.2 as an example. Configuration files of other types of OSs may be different.
 
-#. Use the vi editor to open the **/etc/sysconfig/grub** file and add **consoleblank=600 console=tty0 console=ttyS0,115200n8** after the **GRUB_CMDLINE_LINUX** field.
+#. Use the vi editor to open the **/etc/default/grub** file and add **consoleblank=600 console=tty0 console=ttyS0,115200n8** after the **GRUB_CMDLINE_LINUX** field.
 
    .. code-block::
 

@@ -11,6 +11,6 @@ After software packages are downloaded, verify their PGP digital signatures by f
 
 Before a software package is used for installation or upgrade, its digital signature needs to be verified by following instructions provided in the signature verification guide to ensure that the software package is not tampered with.
 
-For carrier users, visit `https://support.huawei.com/carrier/digitalSignatureAction <http://support.huawei.com/carrier/digitalSignatureAction>`__.
+For carrier users, visit https://support.huawei.com/carrier/digitalSignatureAction.
 
 For enterprise users, visit https://support.huawei.com/enterprise/en/tool/pgp-verify-TL1000000054.

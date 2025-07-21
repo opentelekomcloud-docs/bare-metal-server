@@ -13,7 +13,7 @@
 
 -  In the **/etc/cloud/cloud.cfg** file, check whether the **update_hostname** and **manage_etc_hosts** parameters are commented out or whether the value of **preserve_hostname** is **true**.
 -  In Network Manager, check whether the value of **hostname-mode** in **/etc/NetworkManager/NetworkManager.conf** is set to **none**.
--  Check whether the value of **enable_preserve_hostname** in the **/opt/huawei/network_config/bms-network-config.conf** file is **True**.
+-  Check whether the value of **enable_preserve_hostname** is **True** in the **/opt/otc/network_config/bms-network-config.conf** file.
 
 **Commands**
 
@@ -21,7 +21,7 @@
 
 # Avoid the network from changing the hostname.
 
-**sed -i 's/enable_preserve_hostname = False/enable_preserve_hostname = True/g' /opt/huawei/network_config/bms-network-config.conf**
+**sed -i 's/enable_preserve_hostname = False/enable_preserve_hostname = True/g' /opt/otc/network_config/bms-network-config.conf**
 
 # Avoid **/etc/hosts** from being modified after restart.
 

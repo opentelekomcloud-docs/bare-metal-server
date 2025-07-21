@@ -54,12 +54,12 @@ Procedure
          **Figure 2** Configuring image information
 
       -  **Boot Mode**: Select **BIOS** or **UEFI**. Ensure that the selected boot mode is the same as that in the image file, or the ECSs created from this image will not be able to boot up.
-      -  **OS**: Select the OS specified in the ISO file. To ensure that the image can be created and used properly, select an OS consistent with that in the image file.
+      -  **OS**: Select the OS specified in the ISO file to ensure that the image can be created and used properly.
       -  **System Disk**: Set the system disk capacity (value range: 40 GB to 1024 GB), which must be no less than the capacity of the system disk in the image file.
       -  **Name**: Enter a name for the image to be created.
-      -  **Enterprise Project**: Select the enterprise project to which your images belong.
+      -  **Enterprise Project**: Select the enterprise project your image belongs to.
       -  **Tag**: (Optional) Add a tag to the image to be created.
-      -  **Description**: (Optional) Enter image description as needed.
+      -  (Optional) **Description**: Describe the image as needed.
 
    e. Click **Create Now**.
 

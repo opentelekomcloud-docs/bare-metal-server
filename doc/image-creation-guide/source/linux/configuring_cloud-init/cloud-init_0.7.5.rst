@@ -11,11 +11,17 @@ Cloud-Init 0.7.5
 
       no_ssh_fingerprints: true
 
-#. Set **ssh_pwauth** to **false**. This parameter specifies whether to enable password login in SSH mode.
+#. Set **ssh_pwauth**. This parameter specifies whether to enable password login in SSH mode. The value **true** indicates that the password login in SSH mode is enabled, and the value **false** indicates that the function is disabled.
 
    .. code-block::
 
-      ssh_pwauth: false
+      ssh_pwauth: true
+
+#. Set **disable_root** to **false**. This parameter specifies whether to allow SSH login of user **root**.
+
+   .. code-block::
+
+      disable_root: false
 
 #. Add **preserve_hostname: false**.
 
@@ -71,20 +77,20 @@ Cloud-Init 0.7.5
 
       system_info:
          default_user:
-            name: linux  //Username for OS login
-            lock_passwd: True   //True indicates that login using a password is disabled. Note that some OSs use value 1 to disable the password login.
+           name: root   // User name for OS login
+            lock_passwd: False   // True indicates that login using a password is disabled. Note that some OSs use value 1 to disable the password login.
            gecos: redhat
            groups: [audio, cdrom, dialout, floppy]   // (optional) Add the user to other groups that have been configured in etc/group.
             sudo: ["ALL=(ALL) NOPASSWD:ALL"]  //Current user has all the root rights.
             shell: /bin/bash   //Execute shell in bash mode.
          distro: sles
-          paths:
+         paths:
             cloud_dir: /var/lib/cloud/
             templates_dir: /etc/cloud/templates/
             upstart_dir: /etc/init/
-          ssh_svcname: sshd
+         ssh_svcname: sshd
 
-   In the preceding command, change the value of **distro** based on the OS, such as **distro: sles**, **distro: rhel**, **distro: ubuntu**, **distro: debian**, and **dustro: fedora**.
+   In the preceding command, change the value of **distro** based on the OS, such as **distro: sles**, **distro: rhel**, **distro: ubuntu**, **distro: debian**, and **distro: fedora**.
 
 #. (Optional) For Ubuntu 14.04, perform the following operations:
 

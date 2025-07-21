@@ -2,8 +2,16 @@
 
 .. _en-us_topic_0000001238962999:
 
+Optimizing udev and SELinux
+===========================
+
+Optimizing udev
+---------------
+
+Delete the **/etc/udev/rules.d/70-persistent-net.rules** file.
+
 Optimizing SELinux
-==================
+------------------
 
 .. note::
 
@@ -19,4 +27,4 @@ Optimizing SELinux
 
 #. Press **Esc** and enter **:wq** to save and exit the file.
 
-.. |image1| image:: /_static/images/en-us_image_0285808921.png
+.. |image1| image:: /_static/images/en-us_image_0000002124205222.png

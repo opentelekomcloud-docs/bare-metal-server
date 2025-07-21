@@ -27,6 +27,8 @@ Deleting Temporary Files
 
    **rm -rf /var/log/network-config.log**
 
+   **echo > /etc/hccn.conf**
+
 -  Delete residual configurations.
 
    -  SUSE: Check for the files whose names start with **ifcfg** in the **/etc/sysconfig/network-scripts/** folder and delete them except **ifcfg-lo** and **ifcfg.template**.

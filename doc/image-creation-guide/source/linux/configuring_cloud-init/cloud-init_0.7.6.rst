@@ -11,7 +11,7 @@ Cloud-Init 0.7.6
 
       no_ssh_fingerprints: true
 
-#. set **users** to **default**.
+#. Set **users** to **default**.
 
    .. code-block::
 
@@ -22,15 +22,15 @@ Cloud-Init 0.7.6
 
    .. code-block::
 
-      disable_root: True
+      disable_root: False
       preserve_hostname: false
       syslog_fix_perms: root:root
 
-#. Configure **ssh_pwauth**. This parameter specifies whether to enable password login in SSH mode.
+#. Set **ssh_pwauth**. This parameter specifies whether to enable password login in SSH mode. The value **true** indicates that the password login in SSH mode is enabled, and the value **false** indicates that the function is disabled.
 
    .. code-block::
 
-      ssh_pwauth: false
+      ssh_pwauth: true
 
 #. Use the number sign (#) to comment out the following statements:
 
@@ -75,18 +75,18 @@ Cloud-Init 0.7.6
       system_info:
          distro: sles
          default_user:
-            name: linux  //Username for OS login
-            lock_passwd: True   //True indicates that login using a password is disabled. Note that some OSs use value 1 to disable the password login.
+           name: root   // User name for OS login
+            lock_passwd: False   // True indicates that login using a password is disabled. Note that some OSs use value 1 to disable the password login.
            gecos: redhat
       groups: [adm, audio, cdrom, dialout, dip, floppy, lxd, netdev, plugdev, sudo, video]   // (Optional) Add the user to other groups that have been configured in etc/group.
             sudo: ["ALL=(ALL) NOPASSWD:ALL"]  //Current user has all the root rights.
             shell: /bin/bash   //Execute shell in bash mode.
-          paths:
+         paths:
             cloud_dir: /var/lib/cloud/
             templates_dir: /etc/cloud/templates/
-          ssh_svcname: sshd
+         ssh_svcname: sshd
 
-   In the preceding command, change the value of **distro** based on the OS, such as **distro: sles**, **distro: rhel**, **distro: ubuntu**, **distro: debian**, and **dustro: fedora**.
+   In the preceding command, change the value of **distro** based on the OS, such as **distro: sles**, **distro: rhel**, **distro: ubuntu**, **distro: debian**, and **distro: fedora**.
 
 #. Use the number sign (#) to comment out the following statement:
 

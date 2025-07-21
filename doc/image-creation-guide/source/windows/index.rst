@@ -7,7 +7,7 @@ Windows
 
 -  :ref:`Preparing Hardware and Software <en-us_topic_0081116571>`
 -  :ref:`(Optional) Installing x86 V5 Server Drivers <en-us_topic_0108486963>`
--  :ref:`Using Dism++ to Install the VMTools Driver for an ISO File <en-us_topic_0000001380021690>`
+-  :ref:`Using Dism++ to Integrate the VirtIO Driver into an ISO File <en-us_topic_0000001380021690>`
 -  :ref:`Generating a New ISO File <en-us_topic_0131700759>`
 -  :ref:`Creating a Windows VM <en-us_topic_0000001342019697>`
 -  :ref:`Configuring the VM Environment <en-us_topic_0081116608>`
@@ -25,7 +25,7 @@ Windows
 
    preparing_hardware_and_software
    optional_installing_x86_v5_server_drivers/index
-   using_dism_to_install_the_vmtools_driver_for_an_iso_file
+   using_dism_to_integrate_the_virtio_driver_into_an_iso_file
    generating_a_new_iso_file
    creating_a_windows_vm/index
    configuring_the_vm_environment

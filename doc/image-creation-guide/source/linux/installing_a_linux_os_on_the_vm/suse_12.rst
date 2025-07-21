@@ -17,7 +17,7 @@ SUSE 12
 
    b. Select **Primary Partition** and click **Next**.
 
-   c. Set the value of **Size** to **500 MiB** (for example) or based on service requirements.
+   c. Set **Size** to **500 MiB** (example) or set it based on service requirements.
 
    d. Select **Operating System** for **Role** and click **Next**.
 

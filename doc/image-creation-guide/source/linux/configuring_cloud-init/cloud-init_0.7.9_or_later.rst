@@ -11,17 +11,17 @@ Cloud-Init 0.7.9 or later
 
       no_ssh_fingerprints: true
 
-#. Set **ssh_pwauth** to **false** or **0**, indicating that password login in SSH mode is disabled.
+#. Set **ssh_pwauth**. This parameter specifies whether to enable password login in SSH mode. The value **true** indicates that the password login in SSH mode is enabled, and the value **false** or **0** indicates that the function is disabled.
 
    .. code-block::
 
-      ssh_pwauth: false
+      ssh_pwauth: true
 
 #. Set **disable_root** to **false**. This parameter specifies whether to allow SSH login of user **root**.
 
    .. code-block::
 
-      disable_root: true
+      disable_root: false
 
 #. Add **preserve_hostname: false**.
 
@@ -82,10 +82,57 @@ Cloud-Init 0.7.9 or later
       system_info:
          distro: rhel
          default_user:
-            name: linux  //Username for OS login
-            lock_passwd: True   //True indicates that login using a password is disabled. Note that some OSs use value 1 to disable the password login.
+           name: root   // User name for OS login
+            lock_passwd: False   // True indicates that login using a password is disabled. Note that some OSs use value 1 to disable the password login.
 
-   In the preceding command, change the value of **distro** based on the OS, such as **distro: sles**, **distro: rhel**, **distro: ubuntu**, **distro: debian**, and **dustro: fedora**.
+   In the preceding command, change the value of **distro** based on the OS, such as **distro: sles**, **distro: rhel**, **distro: ubuntu**, **distro: debian**, and **distro: fedora**.
+
+#. For versions other than **cloud-init 23.**\ *x*, modify their source code.
+
+   Source code path: *xxx*\ **/**\ *xxx*\ **/cloudinit/sources/DataSourceOpenStack.py**
+
+   -  Add the **return True** line.
+   -  Delete the line **(DataSourceOpenStackLocal, (sources.DEP_FILESYSTEM,))**.
+
+   .. code-block::
+
+       def detect_openstack(accept_oracle=False):
+           """Return True when a potential OpenStack platform is detected."""
+           return True
+           if not util.is_x86():
+               return True  # Non-Intel cpus don't properly report dmi product names
+           product_name = util.read_dmi_data('system-product-name')
+      ......
+       # Used to match classes to dependencies
+       datasources = [
+           (DataSourceOpenStack, (sources.DEP_FILESYSTEM, sources.DEP_NETWORK)),
+       ]
+
+#. For **cloud-init 23.**\ *x* or later, modify their source code.
+
+   -  Source code path: *xxx*\ **/**\ *xxx*\ **/cloudinit/sources/DataSourceOpenStack.py**. Delete the line **(DataSourceOpenStackLocal, (sources.DEP_FILESYSTEM,))**.
+
+      .. code-block::
+
+          # Used to match classes to dependencies
+          datasources = [
+              (DataSourceOpenStack, (sources.DEP_FILESYSTEM, sources.DEP_NETWORK)),
+          ]
+
+   -  Source code path: *xxx*\ **/**\ *xxx*\ **/cloudinit/sources/__init__.py**. Change **return_value = self._check_and_get_data()** to **return_value = self._get_data()**.
+
+      .. code-block::
+
+         def get_data(self) -> bool:
+             """Datasources implement _get_data to setup metadata and userdata_raw.
+             Minimally, the datasource should return a boolean True on success.
+             """
+             self._dirty_cache = True
+             return_value = self._get_data()
+             if not return_value:
+                 return return_value
+             self.persist_instance_data()
+             return return_value
 
 #. (Optional) For SUSE 12 SP1 and SUSE 12 SP2, modify **[Unit]** in the **/usr/lib/systemd/system/cloud-init-local.service** file.
 

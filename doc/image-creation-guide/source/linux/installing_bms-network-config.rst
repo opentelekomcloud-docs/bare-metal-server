@@ -5,8 +5,8 @@
 Installing bms-network-config
 =============================
 
-Scenario
---------
+Scenarios
+---------
 
 Install bms-network-config to work with Cloud-Init for the network configuration of the BMSs with centralized BMGW. For the BMSs with distributed BMGW (that is, BMSs with SDI 3.0 or SDI 2.2 cards), you do not need to perform operations in this section. :ref:`Table 1 <en-us_topic_0081116559__en-us_topic_0094568715_table929435081518>` describes the BMS flavors for which bms-network-config needs to be installed.
 
@@ -29,8 +29,6 @@ Install bms-network-config to work with Cloud-Init for the network configuration
    +----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | High-performance computing | physical.h2.large, physical.hc2.xlarge                                                                                                                          |
    +----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Kunpeng                    | physical.ks1.2xlarge                                                                                                                                            |
-   +----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Prerequisites
 -------------
@@ -46,7 +44,7 @@ Prerequisites
 Procedure
 ---------
 
-#. Enter the directory where the bms-network-config software package is stored and run the **rpm -ivh**\ *bms-network-config-1.0-7.centosRedhat7.x86_64.rpm* command.
+#. Enter the directory where the bms-network-config software package is stored and run the **rpm -ivh** *bms-network-config-1.0-7.centosRedhat7.x86_64.rpm* command.
 
    .. code-block:: console
 
@@ -61,7 +59,7 @@ Procedure
 
       |image1|
 
-   For Ubuntu/Debian, run the **dpkg -i**\ *xxx* command (*xxx* indicates the .deb package name).
+   For Ubuntu/Debian, run the **dpkg -i** *xxx* command (*xxx* indicates the .deb package name).
 
    .. code-block::
 
