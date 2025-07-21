@@ -5,10 +5,10 @@
 BMS Flavor Management
 =====================
 
--  :ref:`Querying Details About Flavors and Extended Flavor Information <en-us_topic_0131326852>`
+-  :ref:`Querying Flavor Details and Extended Flavor Information <en-us_topic_0131326852>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   querying_details_about_flavors_and_extended_flavor_information
+   querying_flavor_details_and_extended_flavor_information

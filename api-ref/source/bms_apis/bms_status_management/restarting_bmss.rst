@@ -12,7 +12,7 @@ This API is used to restart BMSs of specified IDs. You can restart a maximum of 
 
 .. note::
 
-   This is an asynchronous API. Calling the API successfully indicates that the task is delivered successfully. To check whether the task is successful, use the :ref:`Querying Task Statuses <en-us_topic_0118696596>` API.
+   This is an asynchronous API. Calling the API successfully indicates that the task is delivered successfully. To check whether the task is successful, call the :ref:`Querying Task Statuses <en-us_topic_0118696596>` API.
 
 URI
 ---
@@ -33,72 +33,73 @@ POST /v1/{project_id}/baremetalservers/action
    |                       |                       | For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <en-us_topic_0171277624>`. |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
 
-Request
--------
+Request Parameters
+------------------
 
--  Request parameters
+.. note::
 
-   .. note::
+   In the request, the command to restart BMSs must be sent with the parameter **reboot**. For details, see the example request.
 
-      In the request, the parameters to restart BMSs must be sent using the parameter **reboot**. For details, see the example request.
++-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------+
+| Parameter | Mandatory | Type   | Description                                                                                                             |
++===========+===========+========+=========================================================================================================================+
+| reboot    | Yes       | Object | Specifies the operation to restart BMSs. For details, see :ref:`Table 2 <en-us_topic_0131356392__table64591731162222>`. |
++-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------+
 
-   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                                                             |
-   +===========+===========+========+=========================================================================================================================+
-   | reboot    | Yes       | Object | Specifies the operation to restart BMSs. For details, see :ref:`Table 2 <en-us_topic_0131356392__table64591731162222>`. |
-   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------+
+.. _en-us_topic_0131356392__table64591731162222:
 
-   .. _en-us_topic_0131356392__table64591731162222:
+.. table:: **Table 2** **reboot** data structure
 
-   .. table:: **Table 2** **reboot** field data structure description
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type             | Description                                                                                       |
+   +=================+=================+==================+===================================================================================================+
+   | type            | Yes             | String           | Specifies the BMS reboot type.                                                                    |
+   |                 |                 |                  |                                                                                                   |
+   |                 |                 |                  | -  **SOFT**: soft restart (invalid)                                                               |
+   |                 |                 |                  | -  **HARD**: hard restart (default)                                                               |
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------+
+   | servers         | Yes             | Array of objects | Specifies BMS IDs. For details, see :ref:`Table 3 <en-us_topic_0131356392__table26785545162223>`. |
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------+
 
-      +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------+
-      | Parameter       | Mandatory       | Type             | Description                                                                                       |
-      +=================+=================+==================+===================================================================================================+
-      | type            | Yes             | String           | Specifies the BMS reboot type.                                                                    |
-      |                 |                 |                  |                                                                                                   |
-      |                 |                 |                  | -  **SOFT**: soft restart (invalid)                                                               |
-      |                 |                 |                  | -  **HARD**: hard restart (default)                                                               |
-      +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------+
-      | servers         | Yes             | Array of objects | Specifies BMS IDs. For details, see :ref:`Table 3 <en-us_topic_0131356392__table26785545162223>`. |
-      +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------+
+.. _en-us_topic_0131356392__table26785545162223:
 
-   .. _en-us_topic_0131356392__table26785545162223:
+.. table:: **Table 3** **servers** data structure
 
-   .. table:: **Table 3** **servers** field data structure description
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                               |
+   +=================+=================+=================+===========================================================================================================================+
+   | id              | Yes             | String          | Specifies the BMS ID.                                                                                                     |
+   |                 |                 |                 |                                                                                                                           |
+   |                 |                 |                 | You can obtain the BMS ID from the BMS console or by calling the API :ref:`Querying BMSs <en-us_topic_0000002340063012>`. |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
 
-      +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter       | Mandatory       | Type            | Description                                                                                                                            |
-      +=================+=================+=================+========================================================================================================================================+
-      | id              | Yes             | String          | Specifies the BMS ID.                                                                                                                  |
-      |                 |                 |                 |                                                                                                                                        |
-      |                 |                 |                 | You can obtain the BMS ID from the BMS console or by calling the :ref:`Querying BMSs (Native OpenStack API) <en-us_topic_0053158693>`. |
-      +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+Example Request
+---------------
 
--  Example request
+Restarting two BMSs (IDs: are 616fb98f-46ca-475e-917e-2563e5a8cd19 and 726fb98f-46ca-475e-917e-2563e5a8cd20)
 
-   .. code-block:: text
+.. code-block:: text
 
-      POST https://{BMS Endpoint}/v1/bbf1946d374b44a0a2a95533562ba954/baremetalservers/action
+   POST https://{BMS Endpoint}/v1/bbf1946d374b44a0a2a95533562ba954/baremetalservers/action
 
-   ::
+::
 
-      {
-          "reboot": {
-              "type": "HARD",
-              "servers": [
-                  {
-                      "id": "616fb98f-46ca-475e-917e-2563e5a8cd19"
-                  },
-                  {
-                      "id": "726fb98f-46ca-475e-917e-2563e5a8cd20"
-                  }
-              ]
-          }
-      }
+   {
+       "reboot": {
+           "type": "HARD",
+           "servers": [
+               {
+                   "id": "616fb98f-46ca-475e-917e-2563e5a8cd19"
+               },
+               {
+                   "id": "726fb98f-46ca-475e-917e-2563e5a8cd20"
+               }
+           ]
+       }
+   }
 
-Response
---------
+Response Parameters
+-------------------
 
 -  Normal response
 
@@ -133,7 +134,7 @@ Response
    code      String Specifies the error code.
    ========= ====== ============================
 
-Example response
+Example Response
 ----------------
 
 -  Normal response
