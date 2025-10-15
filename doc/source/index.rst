@@ -11,5 +11,5 @@ A Bare Metal Server (BMS) is a physical server dedicated to individual tenants. 
       :service_type: bms
       :umn: This document describes basic concepts, functions, key terms, and FAQs of BMSs and provides instructions for applying for and using BMSs.
       :api-ref: This document describes application programming interfaces (APIs) of Bare Metal Server (BMS) and provides API parameters and example values.
-      :dev: This document describes how to call the APIs of Bare Metal Server (BMS) to use the functions of the service. The concepts related to BMS help you quickly learn the service.
+      :dev-guide: This document describes how to call the APIs of Bare Metal Server (BMS) to use the functions of the service. The concepts related to BMS help you quickly learn the service.
       :image-creation-guide: This document describes the private image creation procedure (including creating a VM and installing the OS, software, and drivers on the VM) and uses multiple OSs as examples to provide instructions for you to create a private image.
