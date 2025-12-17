@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0000002374101029:
 
-QueryingBMS Flavors
-===================
+Querying BMS Flavors
+====================
 
 Function
 --------

@@ -100,17 +100,17 @@ Response Parameters
 
 .. table:: **Table 3** **metadata** data structure
 
-   +---------------------------------------+-----------------------+-----------------------------------------------------------------+
-   | Parameter                             | Type                  | Description                                                     |
-   +=======================================+=======================+=================================================================+
-   | User-defined field key and value pair | String                | Specifies the key and value pair of the metadata.               |
-   |                                       |                       |                                                                 |
-   |                                       |                       | -  Each key or value contains fewer than 256 characters.        |
-   |                                       |                       |                                                                 |
-   |                                       |                       | -  The value does not support the following special characters: |
-   |                                       |                       |                                                                 |
-   |                                       |                       |    \\"                                                          |
-   +---------------------------------------+-----------------------+-----------------------------------------------------------------+
+   +---------------------------------------+-----------------------+-----------------------------------------------------------------------------------+
+   | Parameter                             | Type                  | Description                                                                       |
+   +=======================================+=======================+===================================================================================+
+   | User-defined field key and value pair | String                | Specifies the key and value pair of the metadata.                                 |
+   |                                       |                       |                                                                                   |
+   |                                       |                       | -  Each key or value contains fewer than 256 characters and cannot be left blank. |
+   |                                       |                       |                                                                                   |
+   |                                       |                       | -  The value does not support the following special characters:                   |
+   |                                       |                       |                                                                                   |
+   |                                       |                       |    \\"                                                                            |
+   +---------------------------------------+-----------------------+-----------------------------------------------------------------------------------+
 
 Example Response
 ----------------
