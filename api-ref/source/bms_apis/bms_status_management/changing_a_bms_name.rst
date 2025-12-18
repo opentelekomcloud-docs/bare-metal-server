@@ -343,7 +343,10 @@ Response Parameters
    +-------------------------+-----------------------+--------------------------------------------------------------------------+
    | OS-EXT-IPS-MAC:mac_addr | String                | Specifies the MAC address. This is an extended attribute.                |
    +-------------------------+-----------------------+--------------------------------------------------------------------------+
-   | OS-EXT-IPS:type         | String                | Specifies the IP address assignment mode. This is an extended attribute. |
+   | OS-EXT-IPS:type         | String                | Specifies the IP address allocation type. This is an extended attribute. |
+   |                         |                       |                                                                          |
+   |                         |                       | -  **fixed**: A fixed private IP address is allocated to the BMS.        |
+   |                         |                       | -  **floating**: A floating IP address is allocated to the BMS.          |
    +-------------------------+-----------------------+--------------------------------------------------------------------------+
    | OS-EXT-IPS:port_id      | String                | Specifies the port ID corresponding to the IP address.                   |
    +-------------------------+-----------------------+--------------------------------------------------------------------------+

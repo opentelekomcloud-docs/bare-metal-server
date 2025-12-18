@@ -30,7 +30,7 @@ GET /v2.1/{project_id}/flavors/{flavor_id}/os-extra_specs
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | flavor_id             | Yes                   | Specifies the flavor ID.                                                                                                                              |
    |                       |                       |                                                                                                                                                       |
-   |                       |                       | You can obtain the flavor ID from the BMS console or using the :ref:`QueryingBMS Flavors <en-us_topic_0000002374101029>` API.                         |
+   |                       |                       | You can obtain the flavor ID from the BMS console or using the :ref:`Querying BMS Flavors <en-us_topic_0000002374101029>` API.                        |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Request Parameters
